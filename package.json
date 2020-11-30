@@ -1,0 +1,26 @@
+{
+  "name": "gauravraj",
+  "version": "1.0.0",
+  "description": "Gaurav Raj's Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thehackersbrain/thehackersbrain.github.io.git"
+  },
+  "author": "Gaurav Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thehackersbrain/thehackersbrain.github.io/issues"
+  },
+  "homepage": "https://github.com/thehackersbrain/thehackersbrain.github.io#readme",
+  "dependencies": {
+    "discord-webhook-node": "^1.1.8",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.17",
+    "nodemailer": "^6.4.16"
+  }
+}
