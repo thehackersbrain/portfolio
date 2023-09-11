@@ -159,7 +159,7 @@ const About = () => {
 
           <a
             className="email-link"
-            href="https://thehackersbrain.github.io/blog/"
+            href="https://medium.com/@thehackersbrain/"
             target="_blank"
             rel="noreferrer">
             Blog
