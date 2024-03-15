@@ -39,7 +39,7 @@ module.exports = {
     },
     {
       name: 'Blog',
-      url: '/blog/',
+      url: 'https://thehackersbrain.online/blog/',
     },
     {
       name: 'Contact',
