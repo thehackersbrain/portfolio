@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'techw803@gmail.com',
+  email: 'contact@thehackersbrain.online',
 
   socialMedia: [
     {
@@ -36,6 +36,10 @@ module.exports = {
     {
       name: 'Work',
       url: '/#projects',
+    },
+    {
+      name: 'Blog',
+      url: '/blog/',
     },
     {
       name: 'Contact',
