@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '3'
 title: 'CHIP-8'
 cover: './chip8.png'
 github: 'https://github.com/thehackersbrain/chip8'

@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'CPUInfo-OS'
 cover: './cpuinfo.png'
 github: 'https://github.com/thehackersbrain/cpuinfo-os'
