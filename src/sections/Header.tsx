@@ -11,9 +11,9 @@ const HeaderSection = () => {
         <a className="nav-item" href="#">
           Projects
         </a>
-        <a className="nav-item" href="#">
-          Contact
-        </a>
+        {/*<a className="nav-item" href="#">*/}
+        {/*  Contact*/}
+        {/*</a>*/}
         <a
           className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
           href="#"
