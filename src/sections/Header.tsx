@@ -6,9 +6,6 @@ const HeaderSection = () => {
           Home
         </a>
         <a className="nav-item" href="#">
-          About
-        </a>
-        <a className="nav-item" href="#">
           Projects
         </a>
         <a
