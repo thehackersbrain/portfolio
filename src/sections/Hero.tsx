@@ -58,7 +58,8 @@ const HeroSection = () => {
         {/*stars - ends here*/}
       </div>
 
-      <div className="container mx-auto">
+      {/*<div className="container mx-auto">*/}
+      <div className="container mx-auto relative z-10">
         <div className="flex flex-col items-center">
           <Image
             src={memojiImage}
@@ -83,11 +84,11 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:cursor-pointer">
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:cursor-pointer">
             <span>👋</span>
             <span className="font-semibold">Let&#39;s Connect</span>
           </button>
