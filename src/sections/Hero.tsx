@@ -75,12 +75,12 @@ const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Security Researcher and Developer
+            Security Researcher &amp; Software Engineer
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
             I&#39;m Gaurav, a Cyber Security Researcher and Developer with over
-            a half decade (5+ years) of experience. Mostly involved in
-            Bug-Hunting or FreeLance projects.
+            a half decade (5+ years) of experience in development and security.{" "}
+            Mostly involved in Bug Hunting or Freelance projects.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
