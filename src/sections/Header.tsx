@@ -6,6 +6,9 @@ const HeaderSection = () => {
           Home
         </a>
         <a className="nav-item" href="#">
+          About
+        </a>
+        <a className="nav-item" href="#">
           Projects
         </a>
         <a
@@ -16,9 +19,6 @@ const HeaderSection = () => {
         >
           Blog
         </a>
-        {/*<a className="nav-item" href="#">*/}
-        {/*  Contact*/}
-        {/*</a>*/}
         <a
           className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
           href="https://raw.githubusercontent.com/thehackersbrain/resume/affbd4fec7ec673e986d7638918583b3525b4d43/resume.pdf"
