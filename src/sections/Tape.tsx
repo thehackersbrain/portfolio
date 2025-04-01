@@ -32,7 +32,7 @@ const TapeSection = () => {
       "
       >
         <div className="flex fade-sideways">
-          <div className="flex flex-none gap-4 pr-4 py-3 move-left">
+          <div className="flex flex-none gap-4 pr-4 py-3 animate-move-left ">
             {[...new Array(2)].fill(0).map((_, i) => (
               <Fragment key={i}>
                 {words.map((word) => (

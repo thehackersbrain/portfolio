@@ -138,7 +138,7 @@ const HeroSection = () => {
             <ArrowDown className="size-4 animate-bounce" />
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:cursor-pointer">
-            <span className="wave-animate">👋</span>
+            <span className="animate-wave origin-[60%_60%]">👋</span>
             <span className="font-semibold">Let&#39;s Connect</span>
           </button>
         </div>

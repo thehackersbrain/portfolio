@@ -137,24 +137,19 @@
   }
 }
 
-@keyframes wave {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(8deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(-8deg); }
-}
+@theme {
+  --animate-wave: wave 1s linear infinite;
+  --animate-move-left: move-left 30s linear infinite;
 
-@keyframes move-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(8deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-8deg); }
+  }
 
-.wave-animate {
-  display: inline-block;
-  transform-origin: 60% 60%;
-  animation: wave 1s linear infinite;
-}
-
-.move-left {
-  animation: move-left 30s linear infinite;
+  @keyframes move-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
 }
