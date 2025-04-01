@@ -144,8 +144,17 @@
   75% { transform: rotate(-8deg); }
 }
 
+@keyframes move-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 .wave-animate {
   display: inline-block;
   transform-origin: 60% 60%;
-  animation: wave 1s ease-in-out infinite;
+  animation: wave 1s linear infinite;
+}
+
+.move-left {
+  animation: move-left 30s linear infinite;
 }

@@ -38,10 +38,19 @@ const config: Config = {
           "50%": { transform: "rotate(0deg)" },
           "75%": { transform: "rotate(-20deg)" },
         },
+        "move-left": {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(-50%)",
+          },
+        },
       },
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
         wave: "wave 1s ease-in-out infinite",
+        "move-left": "move-left 1s linear infinite",
       },
     },
   },
