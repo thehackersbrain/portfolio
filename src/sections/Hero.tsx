@@ -115,7 +115,7 @@ const HeroSection = () => {
           />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
-              <div className="bg-green-500 absolute inset-0 rounded-full animate-ping"></div>
+              <div className="bg-green-500 absolute inset-0 rounded-full animate-[ping_1s_cubic-bezier(0,0,0.2,1)_infinite] scale-135"></div>
             </div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -135,10 +135,10 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:cursor-pointer">
             <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
+            <ArrowDown className="size-4 animate-bounce" />
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:cursor-pointer">
-            <span>👋</span>
+            <span className="animate-wave">👋</span>
             <span className="font-semibold">Let&#39;s Connect</span>
           </button>
         </div>

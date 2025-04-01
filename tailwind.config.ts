@@ -25,9 +25,6 @@ const config: Config = {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
       },
-      animation: {
-        "ping-large": "ping-large 1s ease-in-out infinite",
-      },
       keyframes: {
         "ping-large": {
           "75%, 100%": {
@@ -35,6 +32,16 @@ const config: Config = {
             opacity: "0",
           },
         },
+        wave: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(20deg)" },
+          "50%": { transform: "rotate(0deg)" },
+          "75%": { transform: "rotate(-20deg)" },
+        },
+      },
+      animation: {
+        "ping-large": "ping-large 1s ease-in-out infinite",
+        wave: "wave 1s ease-in-out infinite",
       },
     },
   },
