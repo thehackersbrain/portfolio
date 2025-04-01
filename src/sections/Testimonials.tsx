@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
             {testimonials.map((testimonial) => (
               <Card
                 key={testimonial.name}
-                className="mx-3 max-w-xs md:p-8 md:max-w-md"
+                className="mx-3 max-w-xs md:p-8 p-6 md:max-w-md"
               >
                 <div className="flex gap-4 items-center">
                   <div className="size-14 bg-gray-700 inline-flex rounded-full items-center justify-center flex-shrink-0">

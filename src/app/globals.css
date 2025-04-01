@@ -124,6 +124,10 @@
   .fade-sideways {
     @apply [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
   }
+
+  .primary-gradient {
+    @apply bg-gradient-to-r from-emerald-300 to-sky-400
+  }
 }
 
 @layer utility {

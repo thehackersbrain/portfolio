@@ -5,6 +5,7 @@ import HeroSection from "@/sections/Hero";
 import ProjectsSection from "@/sections/Projects";
 import TapeSection from "@/sections/Tape";
 import TestimonialsSection from "@/sections/Testimonials";
+import AboutSection from "@/sections/About";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ProjectsSection />
       <TapeSection />
       <TestimonialsSection />
+      <AboutSection />
       <div className="container flex flex-col items-center">
         <p className="text-3xl text-center underline my-3 font-serif">
           Gaurav Raj
