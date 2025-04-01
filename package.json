@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
+    "@sentry/nextjs": "^9.10.1",
     "@svgr/webpack": "^8.1.0",
     "@tabler/icons-react": "^3.31.0",
     "class-variance-authority": "^0.7.1",
