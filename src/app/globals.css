@@ -136,3 +136,16 @@
     @apply lg:max-w-5xl;
   }
 }
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(8deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-8deg); }
+}
+
+.wave-animate {
+  display: inline-block;
+  transform-origin: 60% 60%;
+  animation: wave 1s ease-in-out infinite;
+}
