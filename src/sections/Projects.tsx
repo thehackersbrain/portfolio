@@ -49,7 +49,7 @@ const portfolioProjects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="projects" aria-label="Projects">
       <div className="container mx-auto">
         <SectionHeader
           title="Featured Projects"
