@@ -140,6 +140,7 @@
 @theme {
   --animate-wave: wave 1s linear infinite;
   --animate-move-left: move-left 30s linear infinite;
+  --animate-move-right: move-right 30s linear infinite;
 
   @keyframes wave {
     0%, 100% { transform: rotate(0deg); }
@@ -149,7 +150,12 @@
   }
 
   @keyframes move-left {
-    0% { transform: translateX(0); }
+    0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
+  }
+
+  @keyframes move-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
   }
 }
