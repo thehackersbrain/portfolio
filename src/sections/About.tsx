@@ -107,7 +107,7 @@ const AboutSection = () => {
   const constraintRef = useRef(null);
 
   return (
-    <div className="py-20 lg:py-28 px-3">
+    <div className="py-20 lg:py-28 px-3" id="about" aria-label="About Me">
       <div className="container mx-auto">
         <SectionHeader
           title="A Glimpse Into My World"
