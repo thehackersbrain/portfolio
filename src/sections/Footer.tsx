@@ -1,21 +1,27 @@
 import React from "react";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  InstagramIcon,
+} from "lucide-react";
 
 const socialLinks = [
   {
-    name: "Github",
+    name: GithubIcon,
     href: "https://github.com/thehackersbrain",
   },
   {
-    name: "Twitter",
+    name: TwitterIcon,
     href: "https://x.com/thehackersbrain",
   },
   {
-    name: "Instagram",
+    name: InstagramIcon,
     href: "https://instagram.com/thehackersbrain",
   },
   {
-    name: "LinkedIn",
+    name: LinkedinIcon,
     href: "https://linkedin.com/in/thehackersbrainn",
   },
 ];
@@ -27,17 +33,16 @@ const FooterSection = () => {
       <div className="container mx-auto">
         <div className="border-t border-white/15 py-6 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8">
           <div className="text-white/40">&copy; 2025. All rights reserved.</div>
-          <nav className="flex flex-col md:flex-row items-center gap-8">
+          <nav className="flex md:flex-row items-center gap-8">
             {socialLinks.map((link) => (
               <a
-                key={link.name}
+                key={link.href}
                 href={link.href}
-                className="inline-flex items-center gap-1.5"
+                className="inline-flex items-center gap-1.5 float-up-an"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="font-semibold">{link.name}</span>
-                <ArrowUpRightIcon className="size-4" />
+                <link.name className="size-4" />
               </a>
             ))}
           </nav>
