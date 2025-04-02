@@ -6,7 +6,7 @@ import TestimonialsSection from "@/sections/Testimonials";
 import AboutSection from "@/sections/About";
 import ContactSection from "@/sections/Contact";
 import FooterSection from "@/sections/Footer";
-import { CardSpotlightDemo } from "@/sections/ProjectCards";
+import { ProjectsCardSection } from "@/sections/ProjectCards";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <HeaderSection />
       <HeroSection />
       <ProjectsSection />
-      <CardSpotlightDemo />
+      <ProjectsCardSection />
       <TapeSection />
       <TestimonialsSection />
       <AboutSection />
