@@ -30,7 +30,10 @@ const ProjectsCard = ({
     >
       <div className="relative z-20">
         <div className="grid grid-cols-5 items-center mb-4">
-          <Folder className="col-span-3 size-14" />
+          <Folder
+            className="col-span-3 text-emerald-300/80 size-14"
+            fill="#5ee9b5"
+          />
           <Link
             href={githubLink}
             target="_blank"

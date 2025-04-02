@@ -55,8 +55,7 @@ export function ProjectsCardSection() {
         <SectionHeader
           title="Other Noteworthy Projects"
           eyebrow="Honorable Mentions"
-          description="Don&#39;t just take my word for it. See what my clients have to say
-        about my work."
+          description="Beyond the spotlight—explore more noteworthy projects that showcase my work and expertise."
         />
         <div className="mt-20 flex flex-col gap-3 items-center">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-5 lg:grid-cols-3">
