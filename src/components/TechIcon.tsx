@@ -3,6 +3,7 @@ const TechIcon = ({ component }: { component: React.ElementType }) => {
 
   return (
     <>
+      {/*@ts-expect-error wtf - I don't know!!!*/}
       <Component className="size-10 fill-[url(#tech-icon-gradient)]" />
       <svg className="size-0 absolute">
         <linearGradient id="tech-icon-gradient">

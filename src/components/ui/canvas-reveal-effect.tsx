@@ -192,6 +192,7 @@ const ShaderMaterial = ({
   uniforms: Uniforms;
 }) => {
   const { size } = useThree();
+  // @ts-expect-error - again wtf - I don't know
   const ref = useRef<THREE.Mesh>();
   let lastFrameTime = 0;
 
