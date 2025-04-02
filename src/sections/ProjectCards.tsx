@@ -1,5 +1,7 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import ProjectsCard from "@/components/ProjectsCard";
+import Link from "next/link";
+import { ArrowRightIcon } from "lucide-react";
 
 const projects = [
   {
@@ -69,6 +71,15 @@ export function ProjectsCardSection() {
                 projectIndex={projectIndex}
               />
             ))}
+          </div>
+          <div className="self-end m-3">
+            <Link
+              href="/projects"
+              className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:cursor-pointer float-up-an"
+            >
+              <span className="font-semibold">Explore My Work</span>
+              <ArrowRightIcon className="size-4" />
+            </Link>
           </div>
         </div>
       </div>

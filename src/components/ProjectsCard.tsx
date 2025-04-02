@@ -21,7 +21,7 @@ const ProjectsCard = ({
   return (
     <CardSpotlight
       className={twMerge(
-        "h-fit w-80 md:col-span-1 lg:col-span-1 float-grow-an hover:z-20 hover:relative",
+        "h-fit w-80 md:col-span-1 lg:col-span-1 float-up-an",
         addClassName,
       )}
       style={{
