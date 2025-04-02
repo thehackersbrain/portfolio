@@ -1,5 +1,4 @@
 import React from "react";
-import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import {
   GithubIcon,
   LinkedinIcon,
