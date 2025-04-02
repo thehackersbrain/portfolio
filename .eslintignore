@@ -1,0 +1,7 @@
+# Ignore specific files
+src/components/ui/apple-cards-carousel.tsx
+src/hooks/use-outside-click.ts
+
+# Ignore an entire folder
+node_modules/
+dist/
