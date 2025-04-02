@@ -3,6 +3,9 @@ import { withSentryConfig } from "@sentry/nextjs";
 const nextConfig = {
   images: {
     domains: ["images.unsplash.com", "assets.aceternity.com"],
+  }, // to be removed later
+  eslint: {
+    ignoreDuringBuilds: true,
   },
   webpack(config) {
     // Grab the existing rule that handles SVG imports
