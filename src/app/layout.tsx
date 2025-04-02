@@ -18,7 +18,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title:
-    "Gaurav Raj (@thehackersbrain)' | Security Researcher and Software Engineer",
+    "Gaurav Raj (@thehackersbrain) | Security Researcher and Software Engineer",
   description:
     "Hi, I'm Gaurav Raj, I'm a Cyber Security Researcher and Developer with over a half decade (5+ years) of experience. Skilled in multiple programming languages like Python, Rust, JavaScript, C, C++, and more. My expertise extends to and beyond, DevOps, Reverse-Engineering, Development (Full Stack Software Developer), and more. Mostly involved in Bug-Hunting or FreeLance projects. But at the core, I'm just a quick and passionate learner who likes to explore",
 };

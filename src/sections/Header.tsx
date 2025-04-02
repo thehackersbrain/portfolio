@@ -8,7 +8,7 @@ const HeaderSection = () => {
         <Link className="nav-item" href="/">
           <House className="size-5" />
         </Link>
-        <Link className="nav-item" href="/#about">
+        <Link className="nav-item" href="/about">
           About
         </Link>
         <Link
