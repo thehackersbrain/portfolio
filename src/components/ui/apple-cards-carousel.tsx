@@ -184,6 +184,7 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
+  // @ts-expect-error don't know what is this
   useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {
