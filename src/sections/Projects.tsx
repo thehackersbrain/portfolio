@@ -1,49 +1,56 @@
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import Card from "@/components/Card";
+import Link from "next/link";
 
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import snapgramImg from "@/assets/images/snapgram.png";
+import chip8Img from "@/assets/images/chip8.png";
+import vigarchImg from "@/assets/images/vigarch.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import { GithubIcon } from "lucide-react";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Cybercraft Labs Pvt Ltd",
+    year: "2024",
+    title: "Social Media WebApp",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      {
+        title: "Responsive & Modern Design",
+      },
+      { title: "Fully-Functional from Scratch Backend" },
+      { title: "Built with React, Appwrite, Tailwind CSS" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://snapgram-two-self.vercel.app/",
+    githubLink: "https://github.com/thehackersbrain/snapgram",
+    image: snapgramImg,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Cybercraft Labs Pvt Ltd",
+    year: "2024",
+    title: "Vigilante Arch - Live & Anonymous OS",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Amnesic and Live System" },
+      { title: "Minimal System with Vast Tools Repo" },
+      { title: "Tor Integration with Application Security" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://vigarch.cybercraftlabs.org/",
+    githubLink: "https://github.com/cybercraftlabs/vigarch-os",
+    image: vigarchImg,
   },
   {
-    company: "Quantum Dynamics",
+    company: "Personal (THB)",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "CHIP-8 Emulator",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Gaming Console Emulator in Rust" },
+      { title: "Learned Systems Programming & Assembly" },
+      { title: "Memory Management & CPU Emulation" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://thehackersbrain.github.io/chip8",
+    githubLink: "https://github.com/thehackersbrain/chip8",
+    image: chip8Img,
   },
 ];
 
@@ -54,7 +61,7 @@ const ProjectsSection = () => {
         <SectionHeader
           title="Featured Projects"
           eyebrow="Real-world Results"
-          description="See how I transformed concepts into engaging digital experiences."
+          description="Innovative Exploits & Ingenious Builds - A Showcase of My Finest Creations."
         />
         <div className="flex flex-col mt-10 gap-20 md:mt-20 mx-3">
           {portfolioProjects.map((project, projectIndex) => (
@@ -87,18 +94,28 @@ const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 hover:cursor-pointer md:w-auto px-6">
+                  <div className="flex flex-col md:flex-row items-center mt-8 gap-4 w-full">
+                    <Link
+                      href={project.link}
+                      className="bg-white text-gray-950 h-12 lg:w-auto rounded-xl font-semibold inline-flex items-center justify-center gap-2 hover:cursor-pointer md:w-auto px-6 float-up-an"
+                    >
                       <span>View Project</span>
                       <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
+                    </Link>
+                    <Link
+                      href={project.githubLink}
+                      passHref
+                      className="w-12 h-12 inline-flex justify-center items-center rounded-lg border border-white/15 float-up-an"
+                    >
+                      <GithubIcon className="size-5 text-white" />
+                    </Link>
+                  </div>
                 </div>
                 <div className="relative">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none duration-300 ease-in-out hover:-translate-y-2 hover:-translate-x-2"
                   />
                 </div>
               </div>

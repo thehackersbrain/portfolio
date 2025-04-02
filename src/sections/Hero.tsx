@@ -5,7 +5,8 @@ import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import CircleIcon from "@/assets/icons/chrome.svg";
-import ExploreButton from "@/components/ExploreButton";
+import Link from "next/link";
+import ArrowDown from "@/assets/icons/arrow-down.svg";
 
 const HeroSection = () => {
   return (
@@ -133,11 +134,20 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <ExploreButton />
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:cursor-pointer">
+          <Link
+            href="/#projects"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:cursor-pointer"
+          >
+            <span className="font-semibold">Explore My Work</span>
+            <ArrowDown className="size-4 animate-bounce" />
+          </Link>
+          <Link
+            href="mailto:gauravraj0408@gmail.com"
+            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:cursor-pointer"
+          >
             <span className="animate-wave origin-[60%_60%]">👋</span>
             <span className="font-semibold">Let&#39;s Connect</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -122,7 +122,11 @@ const AboutSection = () => {
                 description="Explore the books shaping my perspectives."
               />
               <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={BookImage} alt="Book Cover" />
+                <Image
+                  src={BookImage}
+                  alt="Book Cover"
+                  className="float-grow-an"
+                />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
