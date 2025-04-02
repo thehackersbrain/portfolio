@@ -5,17 +5,19 @@ import TestimonialsSection from "@/sections/Testimonials";
 import AboutSection from "@/sections/About";
 import ContactSection from "@/sections/Contact";
 import { ProjectsCardSection } from "@/sections/ProjectCards";
+import IntroSection from "@/sections/Introduction";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <HeroSection />
+      <IntroSection />
       <ProjectsSection />
       <ProjectsCardSection />
       <TapeSection />
       <TestimonialsSection />
       <AboutSection />
       <ContactSection />
-    </div>
+    </>
   );
 }
