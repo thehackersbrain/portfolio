@@ -41,7 +41,7 @@ const FooterSection = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <link.name className="size-4" />
+                <link.name className="size-5 text-white/60" />
               </a>
             ))}
           </nav>
