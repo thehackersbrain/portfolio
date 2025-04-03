@@ -19,7 +19,7 @@ const HeaderSection = () => {
         >
           Blog
         </Link>
-        <Link className="nav-item" href="/#projects">
+        <Link className="nav-item" href="/projects">
           Projects
         </Link>
         <Link
