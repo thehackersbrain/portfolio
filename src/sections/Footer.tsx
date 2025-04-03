@@ -4,6 +4,7 @@ import {
   LinkedinIcon,
   TwitterIcon,
   InstagramIcon,
+  MessageCircle,
 } from "lucide-react";
 
 const socialLinks = [
@@ -14,6 +15,10 @@ const socialLinks = [
   {
     name: TwitterIcon,
     href: "https://x.com/thehackersbrain",
+  },
+  {
+    name: MessageCircle,
+    href: "https://wa.me/+917488930330",
   },
   {
     name: InstagramIcon,

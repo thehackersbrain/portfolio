@@ -2,7 +2,7 @@
 
 import { SectionHeader } from "@/components/SectionHeader";
 import Card from "@/components/Card";
-import BookImage from "@/assets/images/book-cover.png";
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import Image from "next/image";
 import MapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
@@ -19,6 +19,11 @@ import BurpIcon from "@/assets/icons/burpsuite.svg";
 import ReverseEngineeringIcon from "@/assets/icons/radare2.svg";
 import QemuIcon from "@/assets/icons/qemu.svg";
 import DockerIcon from "@/assets/icons/docker.svg";
+import TlohnBook from "@/assets/images/Lawsofhumannature.jpg";
+import TeBook from "@/assets/images/the-exorcist.jpg";
+import TspBook from "@/assets/images/the-silent-patient.jpg";
+import GitwBook from "@/assets/images/ghost-in-the-wires.jpg";
+import TiiBook from "@/assets/images/the-intelligent-investor.jpg";
 
 const toolboxItems = [
   {
@@ -84,12 +89,6 @@ const hobbies = [
     top: "40%",
   },
   {
-    title: "Tinkering",
-    emoji: "⚡",
-    left: "70%",
-    top: "45%",
-  },
-  {
     title: "Anime",
     emoji: "🎌",
     left: "5%",
@@ -121,6 +120,24 @@ const hobbies = [
   },
 ];
 
+const testimonials = [
+  {
+    src: TlohnBook,
+  },
+  {
+    src: TeBook,
+  },
+  {
+    src: TspBook,
+  },
+  {
+    src: GitwBook,
+  },
+  {
+    src: TiiBook,
+  },
+];
+
 const AboutSection = () => {
   const constraintRef = useRef(null);
 
@@ -139,12 +156,8 @@ const AboutSection = () => {
                 title="My Reads"
                 description="Explore the books shaping my perspectives."
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image
-                  src={BookImage}
-                  alt="Book Cover"
-                  className="float-grow-an"
-                />
+              <div className="mx-auto mt-2 md:mt-0 inline-grid w-full justify-center items-center">
+                <AnimatedTestimonials testimonials={testimonials} />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
