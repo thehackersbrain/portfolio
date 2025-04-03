@@ -24,6 +24,7 @@ const config: Config = {
       fontFamily: {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
+        altfont: "var(--font-alt)",
       },
     },
   },

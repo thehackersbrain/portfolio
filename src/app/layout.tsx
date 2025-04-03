@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
+import localFont from "next/font/local";
 import { twMerge } from "tailwind-merge";
 import "./globals.css";
 import HeaderSection from "@/sections/Header";
@@ -14,6 +15,52 @@ const calistoga = Calistoga({
   variable: "--font-serif",
   subsets: ["latin"],
   weight: ["400"],
+});
+
+const calibre = localFont({
+  src: [
+    {
+      path: "../fonts/Calibre/Calibre-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Calibre/Calibre-LightItalic.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "../fonts/Calibre/Calibre-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Calibre/Calibre-RegularItalic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../fonts/Calibre/Calibre-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Calibre/Calibre-MediumItalic.woff2",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "../fonts/Calibre/Calibre-Semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Calibre/Calibre-SemiboldItalic.woff2",
+      weight: "600",
+      style: "italic",
+    },
+  ],
+  variable: "--font-alt",
 });
 
 export const metadata: Metadata = {
@@ -34,6 +81,7 @@ export default function RootLayout({
         className={twMerge(
           inter.variable,
           calistoga.variable,
+          calibre.variable,
           "bg-gray-900 text-white antialiased font-sans",
         )}
       >
