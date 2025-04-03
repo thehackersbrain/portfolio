@@ -44,7 +44,11 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <div className="py-16 lg:py-24">
+    <section
+      className="py-16 lg:py-24"
+      id="testimonials"
+      aria-label="Testimonials"
+    >
       <div className="container mx-auto">
         <SectionHeader
           title="What Clients Say About Me"
@@ -86,7 +90,7 @@ const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

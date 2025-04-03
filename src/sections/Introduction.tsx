@@ -19,7 +19,7 @@ const IntroSection = () => {
       <div className="mt-16 flex flex-col gap-3 items-center">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="max-w-xl">
-            <p className="text-white/70 md:text-lg px-6 pb-6">
+            <p className="text-white/70 md:text-lg px-3 lg:px-6 pb-6">
               Hello, my name is Gaurav Raj, and I&apos;m a Cyber Security
               Researcher with a strong interest in Bug Bounty hunting,
               Penetration Testing, and programming in multiple languages,

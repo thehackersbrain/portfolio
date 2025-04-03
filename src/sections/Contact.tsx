@@ -1,37 +1,42 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
+import { SectionHeader } from "@/components/SectionHeader";
+import Link from "next/link";
 
 const ContactPage = () => {
   return (
-    <div className="py-16 mx-3 pt-12 lg:py-24 lg:pt-20">
+    <section
+      className="py-20 lg:py-28 px-3"
+      id="contact"
+      aria-label="Contact Me"
+    >
       <div className="container mx-auto">
-        <div className="primary-gradient text-gray-900 py-8 px-10 rounded-3xl text-center relative overflow-hidden z-10 md:text-left">
-          <div
-            className="absolute inset-0 -z-10 opacity-5"
-            style={{
-              backgroundImage: `url(${grainImage.src})`,
-            }}
-          ></div>
-          <div className="flex flex-col gap-8 items-center md:flex-row md:gap-24">
-            <div>
-              <h2 className="font-serif text-2xl md:text-3xl">
-                Let&apos;s create something amazing together
-              </h2>
-              <p className="mt-2 text-sm md:text-base">
-                Ready to bring your next project to life? Let&#39;s connect and
-                discuss how I can help you achieve your goals.
-              </p>
-            </div>
-            <div>
-              <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border-gray-900">
-                <span className="font-semibold">Contact Me</span>
-                <ArrowUpRightIcon className="size-4" />
-              </button>
-            </div>
-          </div>
+        <SectionHeader
+          title="Get In Touch"
+          eyebrow="6. What's next?"
+          description="My inbox is always open ☺️"
+        />
+        <div className="mt-16 flex flex-col gap-3 items-center">
+          <p className="text-center lg:text-xl max-w-2xl px-3 text-white/70 md:text-lg pb-6">
+            While I&apos;m currently immersed in Freelancing projects in
+            Software Development, DevOps, and Cybersecurity (Bug Hunting /
+            Pentests), I&apos;m always open to exciting full-time opportunities.
+            <br />
+            My inbox is always open -- whether you have a project to discuss, a
+            question to ask, or just want to say hello. I&apos;ll do my best to
+            get back to you promptly!
+          </p>
+          <Link
+            href="mailto:gauravraj0408@gmail.com"
+            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:cursor-pointer float-up-an"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span className="font-semibold">Say Hello</span>
+            <ArrowUpRightIcon className="size-4" />
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
