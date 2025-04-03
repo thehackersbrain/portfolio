@@ -10,6 +10,8 @@ const BlogsCard = ({
   description,
   addClassName,
   projectIndex,
+  blogLink,
+  blogDate,
 }: {
   name: string;
   githubLink: string;
@@ -17,6 +19,8 @@ const BlogsCard = ({
   description: string;
   addClassName?: string;
   projectIndex: number;
+  blogLink: string;
+  blogDate: string;
 }) => {
   return (
     <CardSpotlight
@@ -58,10 +62,12 @@ const BlogsCard = ({
               {description}
             </p>
             <div className="mt-10 flex flex-row items-center justify-between">
-              <span className="text-sm text-gray-400">05/03/2025</span>
+              <span className="text-sm text-gray-400">{blogDate}</span>
               <Link
-                href="#"
-                className="py-2 px-6 primary-gradient rounded-full relative"
+                href={blogLink}
+                className="py-2 px-6 primary-gradient rounded-full relative float-grow-an"
+                rel="noreferrer"
+                target="_blank"
               >
                 <span className="font-bold text-gray-950">Read More</span>
               </Link>
