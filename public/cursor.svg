@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="25pt" height="25pt" viewBox="0 0 512.000000 512.000000"
+ preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <linearGradient id="emeraldToSky" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="0%" stop-color="#86efac" />
+            <stop offset="100%" stop-color="#38bdf8" />
+        </linearGradient>
+    </defs>
+<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+fill="url(#emeraldToSky)" stroke="none">
+<path d="M795 4465 c-94 -25 -166 -136 -148 -230 5 -25 1425 -3488 1500 -3658
+42 -93 118 -147 208 -147 43 0 128 42 153 76 12 16 155 342 319 724 246 574
+304 701 333 730 29 29 156 87 733 334 465 199 707 308 727 326 117 110 79 283
+-77 353 -204 90 -3635 1495 -3663 1500 -19 3 -57 0 -85 -8z"/>
+</g>
+</svg>

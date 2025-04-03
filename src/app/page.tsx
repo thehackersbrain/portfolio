@@ -6,6 +6,7 @@ import AboutSection from "@/sections/About";
 import ContactSection from "@/sections/Contact";
 import { ProjectsCardSection } from "@/sections/ProjectCards";
 import IntroSection from "@/sections/Introduction";
+import BlogsSection from "@/sections/Blogs";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <TapeSection />
       <TestimonialsSection />
       <AboutSection />
+      <BlogsSection />
       <ContactSection />
     </>
   );

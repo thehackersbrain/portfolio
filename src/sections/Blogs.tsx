@@ -1,9 +1,7 @@
 import { SectionHeader } from "@/components/SectionHeader";
-import ProjectsCard from "@/components/ProjectsCard";
-import Link from "next/link";
-import { ArrowRightIcon } from "lucide-react";
+import BlogsCard from "@/components/BlogCard";
 
-const projects = [
+const blogs = [
   {
     name: "Snapgram",
     githubLink: "https://github.com/thehackersbrain/snapgram",
@@ -26,21 +24,21 @@ const projects = [
       "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
   },
   {
-    name: "Webhawk",
+    name: "Webhawk - Web Recon Framework for Pentesting or Bug Hunting",
     githubLink: "https://github.com/thehackersbrain/snapgram",
     externalLink: "https://snapgram.netlify.app/",
     description:
       "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
   },
   {
-    name: "Passcraft",
+    name: "Passcraft - Create targeted wordlist for phishing attacks",
     githubLink: "https://github.com/thehackersbrain/snapgram",
     externalLink: "https://snapgram.netlify.app/",
     description:
       "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
   },
   {
-    name: "Saycheese",
+    name: "Saycheese - Capture images or target via phishing link",
     githubLink: "https://github.com/thehackersbrain/snapgram",
     externalLink: "https://snapgram.netlify.app/",
     description:
@@ -48,40 +46,33 @@ const projects = [
   },
 ];
 
-export function ProjectsCardSection() {
+const BlogsSection = () => {
   return (
-    <div className="py-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="blogs" aria-label="Blogs">
       <div className="container mx-auto">
         <SectionHeader
-          title="Other Noteworthy Projects"
-          eyebrow="Honorable Mentions"
-          description="Beyond the spotlight—explore more noteworthy projects that showcase my work and expertise."
-        />
+          title="Blogs representing Mind"
+          eyebrow="Collection of Thoughts"
+          description="Innovative Exploits & Ingenious Builds - A Showcase of My Finest Creations."
+        />{" "}
         <div className="mt-20 flex flex-col gap-3 items-center">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-5 lg:grid-cols-3">
-            {projects.map((project, projectIndex) => (
-              <ProjectsCard
-                key={project.name}
-                name={project.name}
-                githubLink={project.githubLink}
-                externalLink={project.externalLink}
-                description={project.description}
+            {blogs.map((blog, blogIndex) => (
+              <BlogsCard
+                key={blog.name}
+                name={blog.name}
+                githubLink={blog.githubLink}
+                externalLink={blog.externalLink}
+                description={blog.description}
                 addClassName="sticky custom-cursor"
-                projectIndex={projectIndex}
+                projectIndex={blogIndex}
               />
             ))}
           </div>
-          <div className="self-end m-3">
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:cursor-pointer float-up-an"
-            >
-              <span className="font-semibold">Explore My Work</span>
-              <ArrowRightIcon className="size-4" />
-            </Link>
-          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default BlogsSection;
