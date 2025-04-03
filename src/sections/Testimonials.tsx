@@ -12,32 +12,32 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 const testimonials = [
   {
     name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    position: "CTO @ CyberShield",
+    text: "Gaurav was instrumental in securing our infrastructure against critical threats. His ability to identify and patch vulnerabilities before they became issues is truly exceptional. We trust him completely!",
     avatar: memojiAvatar1,
   },
   {
     name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    position: "Lead Developer @ SecureCode",
+    text: "Working with Gaurav was a game-changer. His deep understanding of secure coding practices helped us eliminate major security flaws. Our applications are now more robust than ever.",
     avatar: memojiAvatar2,
   },
   {
     name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    position: "CEO @ PentestPro",
+    text: "Gaurav's penetration testing skills are second to none. He uncovered vulnerabilities that other teams missed, helping us reinforce our security posture significantly. We couldn’t be more impressed.",
     avatar: memojiAvatar3,
   },
   {
     name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    position: "Security Engineer @ GlobalTech",
+    text: "Gaurav is a true cybersecurity expert. His research into advanced exploitation techniques gave our team valuable insights. His contributions have strengthened our defenses tremendously.",
     avatar: memojiAvatar4,
   },
   {
     name: "Michael Brown",
     position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    text: "Gaurav’s expertise in secure software development has been invaluable. He not only built high-performance systems but also ensured they were resilient against real-world threats. Highly recommended!",
     avatar: memojiAvatar5,
   },
 ];
@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto">
         <SectionHeader
           title="What Clients Say About Me"
-          eyebrow="Happy Clients"
+          eyebrow="3. Happy Clients"
           description="Don&#39;t just take my word for it. See what my clients have to say
         about my work."
         />

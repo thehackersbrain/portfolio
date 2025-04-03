@@ -58,10 +58,10 @@ const BlogsSection = () => {
     <section className="pb-16 lg:py-24" id="blogs" aria-label="Blogs">
       <div className="container mx-auto">
         <SectionHeader
-          title="Blogs representing Mind"
-          eyebrow="Collection of Thoughts"
-          description="Innovative Exploits & Ingenious Builds - A Showcase of My Finest Creations."
-        />{" "}
+          title="Dumps from My Mind"
+          eyebrow="5. Collection of Thoughts"
+          description="Unfiltered Thoughts, Unpatched Ideas – A Glimpse Into My Mind."
+        />
         <div className="mt-20 flex flex-col gap-3 items-center">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-5 lg:grid-cols-3">
             {sortedBlogs.map((blog, blogIndex) => (

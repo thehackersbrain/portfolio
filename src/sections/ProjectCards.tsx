@@ -60,7 +60,7 @@ export function ProjectsCardSection() {
       <div className="container mx-auto">
         <SectionHeader
           title="Other Noteworthy Projects"
-          eyebrow="Honorable Mentions"
+          eyebrow="2. Honorable Mentions"
           description="Beyond the spotlight—explore more noteworthy projects that showcase my work and expertise."
         />
         <div className="mt-20 flex flex-col gap-3 items-center">

@@ -4,102 +4,120 @@ import { SectionHeader } from "@/components/SectionHeader";
 import Card from "@/components/Card";
 import BookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
-import ReactIcon from "@/assets/icons/react.svg";
-import Html5Icon from "@/assets/icons/html5.svg";
-import CssIcon from "@/assets/icons/css3.svg";
-import JavaScriptIcon from "@/assets/icons/square-js.svg";
-import ChromeIcon from "@/assets/icons/chrome.svg";
-import GithubIcon from "@/assets/icons/github.svg";
 import MapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import CardHeader from "@/components/CardHeader";
 import ToolBoxItems from "@/components/ToolBoxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import LinuxIcon from "@/assets/icons/archlinux.svg";
+import GentooIcon from "@/assets/icons/gentoo.svg";
+import VimIcon from "@/assets/icons/vim.svg";
+import TmuxIcon from "@/assets/icons/tmux.svg";
+import RustIcon from "@/assets/icons/rust.svg";
+import BurpIcon from "@/assets/icons/burpsuite.svg";
+import ReverseEngineeringIcon from "@/assets/icons/radare2.svg";
+import QemuIcon from "@/assets/icons/qemu.svg";
+import DockerIcon from "@/assets/icons/docker.svg";
 
 const toolboxItems = [
   {
-    title: "React",
-    iconType: ReactIcon,
+    title: "Arch Linux",
+    iconType: LinuxIcon,
   },
   {
-    title: "Next.js",
-    iconType: ReactIcon,
+    title: "Gentoo",
+    iconType: GentooIcon,
   },
   {
-    title: "JavaScript",
-    iconType: JavaScriptIcon,
+    title: "Neovim",
+    iconType: VimIcon,
   },
   {
-    title: "TypeScript",
-    iconType: JavaScriptIcon,
+    title: "Tmux",
+    iconType: TmuxIcon,
   },
   {
-    title: "Linux",
-    iconType: Html5Icon,
+    title: "Rust",
+    iconType: RustIcon,
   },
   {
-    title: "Vim",
-    iconType: CssIcon,
+    title: "Radare2",
+    iconType: ReverseEngineeringIcon,
   },
   {
-    title: "Emacs",
-    iconType: ChromeIcon,
+    title: "Burp Suite",
+    iconType: BurpIcon,
   },
   {
-    title: "Bash",
-    iconType: GithubIcon,
+    title: "QEMU & KVM",
+    iconType: QemuIcon,
+  },
+  {
+    title: "Docker",
+    iconType: DockerIcon,
   },
 ];
-
 const hobbies = [
   {
     title: "Reading",
-    emoji: "🤬",
+    emoji: "📖",
     left: "5%",
     top: "5%",
   },
   {
-    title: "Traveling",
-    emoji: "☹️",
+    title: "Hacking",
+    emoji: "💻",
     left: "50%",
     top: "5%",
   },
   {
-    title: "Chess",
-    emoji: "🎨",
+    title: "Boxing",
+    emoji: "🥊",
     left: "10%",
     top: "35%",
   },
   {
     title: "Psychology",
-    emoji: "⚽️",
+    emoji: "🧠",
     left: "35%",
     top: "40%",
   },
   {
-    title: "Playing",
-    emoji: "🤖",
+    title: "Tinkering",
+    emoji: "⚡",
     left: "70%",
     top: "45%",
   },
   {
-    title: "Games",
-    emoji: "💀",
+    title: "Anime",
+    emoji: "🎌",
     left: "5%",
     top: "65%",
   },
   {
-    title: "Painting",
-    emoji: "🦾",
+    title: "Biking",
+    emoji: "🏍️",
     left: "45%",
     top: "70%",
   },
   {
-    title: "Photography",
-    emoji: "☠️",
+    title: "Whiskey",
+    emoji: "🥃",
     left: "55%",
     top: "25%",
+  },
+  {
+    title: "Philosophy",
+    emoji: "📜",
+    left: "20%",
+    top: "75%",
+  },
+  {
+    title: "Coding",
+    emoji: "🖥️",
+    left: "75%",
+    top: "30%",
   },
 ];
 
@@ -111,7 +129,7 @@ const AboutSection = () => {
       <div className="container mx-auto">
         <SectionHeader
           title="A Glimpse Into My World"
-          eyebrow="About Me"
+          eyebrow="4. About Me - Workflow"
           description="Learn more about who I am, what I do, and what inspires me."
         />
         <div className="mt-20 flex flex-col gap-8">
@@ -132,7 +150,7 @@ const AboutSection = () => {
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
-                description="Explore the technologies and tools I use to craft exceptional digital experiences."
+                description="A mix of powerful tools I use to code, hack, and build cool stuff ⚡🚀"
                 className=""
               />
               <ToolBoxItems

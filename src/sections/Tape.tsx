@@ -1,27 +1,27 @@
 import StarIcon from "@/assets/icons/star.svg";
 import { Fragment } from "react";
 
-const words = [
-  "Performant",
-  "Accessible",
-  "Secure",
-  "Interactive",
-  "Scalable",
-  "User-friendly",
-  "Maintainable",
-  "Search Optimized",
-  "Usable",
-  "Reliable",
+const words: string[] = [
+  "Innovative",
   "Efficient",
-  "Robust",
-  "Versatile",
-  "Intuitive",
-  "Lightweight",
-  "Extensible",
-  "Adaptive",
-  "Seamless",
+  "Reliable",
+  "Scalable",
+  "Customizable",
+  "Precise",
   "Optimized",
   "Resilient",
+  "Hackable",
+  "Modular",
+  "Automated",
+  "Minimal",
+  "Powerful",
+  "High-Performance",
+  "Tactical",
+  "Secure-by-Design",
+  "Experimental",
+  "Unbreakable",
+  "Streamlined",
+  "Self-Sufficient",
 ];
 
 const TapeSection = () => {

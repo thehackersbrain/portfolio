@@ -12,7 +12,7 @@ const IntroSection = () => {
       <div className="container mx-auto">
         <SectionHeader
           title="Introduction"
-          eyebrow="About Me"
+          eyebrow="0. About Me - Intro"
           description="Security Researcher, Developer & Innovator"
         />
       </div>
