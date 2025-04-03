@@ -5,46 +5,52 @@ import { ArrowRightIcon } from "lucide-react";
 
 const projects = [
   {
-    name: "Snapgram",
-    githubLink: "https://github.com/thehackersbrain/snapgram",
-    externalLink: "https://snapgram.netlify.app/",
+    name: "Carepulse",
+    githubLink: "https://github.com/thehackersbrain/carepulse",
+    externalLink: "https://carepulse-theta.vercel.app/",
+    date: "2024-07-11",
     description:
-      "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
+      "A healthcare patient management application using Next.js, TypeScript, and TailwindCSS. This system enables patients to register, book, and manage appointments with doctors, while providing administrators tools for scheduling, confirming, and canceling appointments. It includes SMS notifications, file upload with Appwrite storage, and performance tracking using Sentry.",
   },
   {
-    name: "Vigarch",
-    githubLink: "https://github.com/thehackersbrain/snapgram",
-    externalLink: "https://snapgram.netlify.app/",
+    name: "Brainwave",
+    githubLink: "https://github.com/thehackersbrain/brainwave",
+    externalLink: "https://brainwave-pearl-five.vercel.app/",
+    date: "2024-07-10",
     description:
-      "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
+      "Brainwave, a modern UI/UX website using React.js and TailwindCSS, built with Vite. This project showcases sleek design, parallax animations, complex UI geometry, and stylish gradients. It features beautiful sections including hero, services, features, and more, ensuring responsive functionality across all devices. Brainwave exemplifies contemporary web dev practices.",
   },
   {
-    name: "Hiddenwave",
-    githubLink: "https://github.com/thehackersbrain/snapgram",
-    externalLink: "https://snapgram.netlify.app/",
+    name: "HooBank",
+    githubLink: "https://github.com/thehackersbrain/hoobank",
+    externalLink: "https://hoobank-two-wine.vercel.app/",
+    date: "2024-07-08",
     description:
-      "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
+      "Created HooBank, a modern UI/UX website utilizing React.js and TailwindCSS. This project emphasizes sleek and responsive design, showcasing advanced web development skills and a focus on user experience. HooBank demonstrates proficiency in building visually appealing, high-performance web applications with contemporary front-end technologies.",
   },
   {
-    name: "Webhawk",
-    githubLink: "https://github.com/thehackersbrain/snapgram",
-    externalLink: "https://snapgram.netlify.app/",
+    name: "Modern Portfolio",
+    githubLink: "https://github.com/thehackersbrain/minimal-portfolio",
+    externalLink: "https://minimal-portfolio-blue.vercel.app/",
+    date: "2024-07-07",
     description:
-      "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
+      "Developed a modern portfolio web app using Next.js, Three.js, Framer Motion, and TailwindCSS. This project showcases a captivating hero section, interactive 3D elements, a dynamic testimonials area, and a visually striking canvas effect. It demonstrates advanced UI/UX design, responsiveness, and a unique presentation of personal information.",
+  },
+  {
+    name: "Vigilante Arch",
+    githubLink: "https://github.com/cybercraftlabs/vigarch-os",
+    externalLink: "https://vigarch.cybercraftlabs.org/",
+    date: "2024-04-09",
+    description:
+      "Vigilante Arch is the ultimate toolkit for modern-day cyber vigilantes. Built on the robust foundation of Arch Linux, The system equips you with the tools and anonymity you need to defend or attack the digital realm. Forge your path as a digital guardian. Vigilante Arch empowers hackers, security professionals, and geeks alike to explore.",
   },
   {
     name: "Passcraft",
-    githubLink: "https://github.com/thehackersbrain/snapgram",
-    externalLink: "https://snapgram.netlify.app/",
+    githubLink: "https://github.com/thehackersbrain/passcraft",
+    externalLink: "https://github.com/thehackersbrain/passcraft",
+    date: "2023-05-13",
     description:
-      "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
-  },
-  {
-    name: "Saycheese",
-    githubLink: "https://github.com/thehackersbrain/snapgram",
-    externalLink: "https://snapgram.netlify.app/",
-    description:
-      "A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family. A social media app that allows users to share photos and videos with friends and family.A social media app that allows users to share photos and videos with friends and family.",
+      "PassCraft is a powerful and versatile tool designed to assist in the creation of password wordlists based on an individual's personal information. It provides a streamlined and automated approach to generate customized wordlists, enhancing the efficiency of password cracking and security assessment processes. Dictionary attacks simplified.",
   },
 ];
 
