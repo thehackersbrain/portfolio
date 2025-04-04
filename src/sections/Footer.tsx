@@ -4,8 +4,8 @@ import {
   LinkedinIcon,
   TwitterIcon,
   InstagramIcon,
-  MessageCircle,
 } from "lucide-react";
+import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
 
 const socialLinks = [
   {
@@ -17,7 +17,7 @@ const socialLinks = [
     href: "https://x.com/thehackersbrain",
   },
   {
-    name: MessageCircle,
+    name: WhatsAppIcon,
     href: "https://wa.me/+917488930330",
   },
   {
@@ -42,10 +42,11 @@ const FooterSection = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="inline-flex items-center gap-1.5 float-up-an"
+                className="inline-flex items-center gap-1.5 float-up-an text-white/60"
                 target="_blank"
                 rel="noreferrer"
               >
+                <link></link>
                 <link.name className="size-5 text-white/60" />
               </a>
             ))}

@@ -21,6 +21,7 @@ const ContactPage = () => {
             Software Development, DevOps, and Cybersecurity (Bug Hunting /
             Pentests), I&apos;m always open to exciting full-time opportunities.
             <br />
+            <br />
             My inbox is always open -- whether you have a project to discuss, a
             question to ask, or just want to say hello. I&apos;ll do my best to
             get back to you promptly!
