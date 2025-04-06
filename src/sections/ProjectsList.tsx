@@ -156,7 +156,7 @@ export function ExpandableCardDemo() {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-gray-800 duration-150 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row">
+            <div className="flex gap-4 flex-col md:flex-row items-center justify-center">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={100}
@@ -181,10 +181,10 @@ export function ExpandableCardDemo() {
                 </motion.p>
               </div>
             </div>
-            <div className="flex flex-row justify-center items-center gap-3">
+            <div className="flex flex-row justify-center items-center gap-3 my-5">
               <motion.button
                 layoutId={`button-${card.title}-${id}`}
-                className="px-4 py-2 text-md rounded-lg font-bold bg-gray-100 hover:bg-emerald-300/90 duration-150 text-black mt-4 md:mt-0 hover:cursor-pointer float-up-an"
+                className="px-4 py-2 text-md rounded-lg font-bold bg-gray-100 hover:bg-emerald-300/90 duration-150 text-black md:mt-0 hover:cursor-pointer float-up-an inline-flex items-center"
               >
                 {card.ctaText}
               </motion.button>

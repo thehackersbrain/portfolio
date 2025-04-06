@@ -56,11 +56,11 @@ const AboutPage = () => {
           </p>
           <div className="flex flex-col gap-3 mt-2 items-center justify-center">
             <div className="inline-flex flex-col md:grid lg:grid lg:grid-cols-2 md:grid-cols-2 gap-3 items-center text-[#CBD5E1]">
-              <div className="inline-flex gap-2 justify-start items-center">
+              <div className="inline-flex gap-2 justify-center md:justify-start lg:justify-start items-center">
                 <MapPin className="h-5 w-5" />
                 <p>Patna/Bihar</p>
               </div>
-              <div className="inline-flex gap-2 justify-start -ml-8 items-center">
+              <div className="inline-flex gap-2 justify-center md:justify-start lg:justify-start -ml-8 items-center">
                 <Mail className="h-5 w-5" />
                 <Link
                   href="mailto:gauravraj0408@gmail.com"
@@ -86,6 +86,9 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container mx-auto my-6">
+        <h1>About Me</h1>
       </div>
     </section>
   );
