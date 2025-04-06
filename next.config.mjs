@@ -2,7 +2,11 @@ import { withSentryConfig } from "@sentry/nextjs";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["images.unsplash.com", "assets.aceternity.com"],
+    domains: [
+      "images.unsplash.com",
+      "assets.aceternity.com",
+      "opengraph.githubassets.com",
+    ],
   }, // to be removed later
   eslint: {
     ignoreDuringBuilds: true,

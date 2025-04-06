@@ -6,32 +6,28 @@ import { useOutsideClick } from "@/hooks/use-outside-click";
 import { GithubIcon } from "lucide-react";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "lucide-react";
+import PaginationComp from "@/components/PaginationComp";
 
 export function ExpandableCardDemo() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null,
-  );
-  const ref = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(null);
+  const ref = useRef(null);
   const id = useId();
 
   useEffect(() => {
-    function onKeyDown(event: KeyboardEvent) {
+    function onKeyDown(event) {
       if (event.key === "Escape") {
         setActive(false);
       }
     }
 
-    if (active && typeof active === "object") {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    document.body.style.overflow =
+      active && typeof active === "object" ? "hidden" : "auto";
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
-  // @ts-expect-error I don't know what the fuck is happening
+  // @ts-expect-error Custom hook type workaround
   useOutsideClick(ref, () => setActive(null));
 
   return (
@@ -46,33 +42,26 @@ export function ExpandableCardDemo() {
           />
         )}
       </AnimatePresence>
+
       <AnimatePresence>
-        {active && typeof active === "object" ? (
-          <div className="fixed inset-0  grid place-items-center z-[100]">
+        {active && typeof active === "object" && (
+          <div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              exit={{
-                opacity: 0,
-                transition: {
-                  duration: 0.05,
-                },
-              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0, transition: { duration: 0.05 } }}
               className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
               <CloseIcon />
             </motion.button>
+
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -87,7 +76,7 @@ export function ExpandableCardDemo() {
 
               <div>
                 <div className="flex justify-between items-start p-4">
-                  <div className="">
+                  <div>
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
                       className="font-bold text-neutral-200"
@@ -121,6 +110,7 @@ export function ExpandableCardDemo() {
                     </Link>
                   </div>
                 </div>
+
                 <div className="pt-4 relative px-4">
                   <motion.div
                     layout
@@ -137,8 +127,9 @@ export function ExpandableCardDemo() {
               </div>
             </motion.div>
           </div>
-        ) : null}
+        )}
       </AnimatePresence>
+
       <ul className="max-w-2xl mx-auto w-full gap-4">
         {cards.map((card) => (
           <motion.div
@@ -147,7 +138,7 @@ export function ExpandableCardDemo() {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-gray-800 duration-150 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
+            <div className="flex gap-4 flex-col md:flex-row">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={100}
@@ -157,7 +148,7 @@ export function ExpandableCardDemo() {
                   className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
-              <div className="">
+              <div>
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
                   className="font-medium text-neutral-200 text-center md:text-left"
@@ -190,51 +181,44 @@ export function ExpandableCardDemo() {
           </motion.div>
         ))}
       </ul>
+
+      <div className="inline-flex items-center justify-center w-full mt-4">
+        <PaginationComp />
+      </div>
     </>
   );
 }
 
-export const CloseIcon = () => {
-  return (
-    <motion.svg
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      exit={{
-        opacity: 0,
-        transition: {
-          duration: 0.05,
-        },
-      }}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-4 w-4 text-black"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
-    </motion.svg>
-  );
-};
+export const CloseIcon = () => (
+  <motion.svg
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0, transition: { duration: 0.05 } }}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-4 w-4 text-black"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M18 6l-12 12" />
+    <path d="M6 6l12 12" />
+  </motion.svg>
+);
 
 const cards = [
   {
     description: "Cybercraft Labs Pvt Ltd - 2024",
     title: "Vigilante Arch",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    src: "https://opengraph.githubassets.com/1c3cbe08e54b676d626a10f4618ed849f331809ab5c0a0d925bf596d0dda5512/cybercraftlabs/vigarch-os",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    githubLink: "https://github.com/aceternity/vigilante-arch",
+    ctaLink: "https://vigarch.cybercraftlabs.org/",
+    githubLink: "https://github.com/cybercraftlabs/vigarch-os",
     content: () => {
       return (
         <>
@@ -269,10 +253,10 @@ const cards = [
   {
     description: "cybercraft labs pvt ltd - 2024",
     title: "Carepulse",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    src: "https://opengraph.githubassets.com/5f4af288cd16d56dabe590adb288ea11197ce34c2310d66de2fbe17b2075b7ab/thehackersbrain/carepulse",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    githubLink: "https://github.com/aceternity/vigilante-arch",
+    ctaLink: "https://carepulse-theta.vercel.app/",
+    githubLink: "https://github.com/thehackersbrain/carepulse",
     content: () => {
       return (
         <p>
@@ -293,10 +277,10 @@ const cards = [
   {
     description: "Cybercraft Labs Pvt Ltd - 2024",
     title: "Brainwave",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    src: "https://opengraph.githubassets.com/a6291768c683d5aaa76f8adeb682a0fcb76b5c0b1fc2987b571532ab1bedc09b/thehackersbrain/brainwave",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    githubLink: "https://github.com/aceternity/vigilante-arch",
+    ctaLink: "https://brainwave-pearl-five.vercel.app/",
+    githubLink: "https://github.com/thehackersbrain/brainwave",
     content: () => {
       return (
         <p>
@@ -316,10 +300,10 @@ const cards = [
   {
     description: "Personal (HTB) - 2023",
     title: "CHIP-8 Emulator",
-    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    src: "https://opengraph.githubassets.com/c5990194d381e26954348ad60848cbd60b542a9b7e31715b1807b51a484dc0f8/thehackersbrain/chip8",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    githubLink: "https://github.com/aceternity/vigilante-arch",
+    ctaLink: "https://github.com/thehackersbrain/chip8",
+    githubLink: "https://github.com/thehackersbrain/chip8",
     content: () => {
       return (
         <p>
@@ -338,10 +322,10 @@ const cards = [
   {
     description: "Cybercraft Labs Pvt Ltd - 2024",
     title: "Passcraft",
-    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
+    src: "https://opengraph.githubassets.com/743bf30ef4f9b563cbddab69e48214262d547747601042c6a03f1b561d857b39/thehackersbrain/passcraft",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    githubLink: "https://github.com/aceternity/vigilante-arch",
+    ctaLink: "https://github.com/thehackersbrain/passcraft",
+    githubLink: "https://github.com/thehackersbrain/passcraft",
     content: () => {
       return (
         <p>
