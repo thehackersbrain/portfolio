@@ -64,7 +64,7 @@ const AboutPage = () => {
                 <Mail className="h-5 w-5" />
                 <Link
                   href="mailto:gauravraj0408@gmail.com"
-                  className="hover:text-emerald-300/80 duration-300"
+                  className="hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-300 hover:to-sky-400 hover:bg-clip-text transition-all duration-300"
                 >
                   me@thehackersbrain.xyz
                 </Link>
