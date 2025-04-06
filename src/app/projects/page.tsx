@@ -10,9 +10,9 @@ const ProjectsPage = () => {
     >
       <div className="container mx-auto">
         <SectionHeader
-          title="Featured Projects"
-          eyebrow="1. Real-world Results"
-          description="Innovative Exploits & Ingenious Builds - A Showcase of My Finest Creations."
+          title="Built to Break & Rebuild"
+          eyebrow="1. Systems with Purpose"
+          description="A Showcase of Tools and Exploits Born from Real-World Challenges and Curiosity."
         />
         <div className="mt-10">
           <ExpandableCardDemo />

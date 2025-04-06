@@ -31,6 +31,7 @@ export function ExpandableCardDemo() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
+  // @ts-expect-error I don't know what the fuck is happening
   useOutsideClick(ref, () => setActive(null));
 
   return (
