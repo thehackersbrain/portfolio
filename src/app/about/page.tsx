@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
+import EducationSectionP from "@/sections/projects/Education";
 
 const socialLinks = [
   {
@@ -36,7 +37,7 @@ const socialLinks = [
 
 const AboutPage = () => {
   return (
-    <section className="my-16 h-screen lg:my-24">
+    <section className="my-16 lg:my-24">
       <div className="relative w-full lg:-mt-24 lg:pt-24 -mt-16 pt-16 border-b-1 border-[#334155] overflow-x-clip pb-4">
         <div
           className={cn(
@@ -87,8 +88,16 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto my-6">
-        <h1>About Me</h1>
+      <div className="container mx-auto my-6 max-w-lg px-16">
+        <div className="flex flex-col items-center justify-center gap-3">
+          {/*==== starts here ====*/}
+          <EducationSectionP />
+          <EducationSectionP />
+          <EducationSectionP />
+          <EducationSectionP />
+          <EducationSectionP />
+          {/*==== ends here ====*/}
+        </div>
       </div>
     </section>
   );
