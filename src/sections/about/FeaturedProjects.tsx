@@ -34,7 +34,7 @@ const FeaturedProjectsSectionP = () => {
             </div>
           </div>
           <div className="my-3 gap-3 max-w-screen">
-            <div className="flex flex-row gap-3 items-center justify-start">
+            <div className="flex flex-row gap-3 items-center justify-start flex-wrap">
               <Badge
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
@@ -93,7 +93,7 @@ const FeaturedProjectsSectionP = () => {
             </div>
           </div>
           <div className="my-3 gap-3 max-w-screen">
-            <div className="flex flex-row gap-3 items-center justify-start">
+            <div className="flex flex-row gap-3 items-center justify-start flex-wrap">
               <Badge
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
@@ -152,7 +152,7 @@ const FeaturedProjectsSectionP = () => {
             </div>
           </div>
           <div className="my-3 gap-3 max-w-screen">
-            <div className="flex flex-row gap-3 items-center justify-start">
+            <div className="flex flex-row gap-3 items-center justify-start flex-wrap">
               <Badge
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
