@@ -1,5 +1,6 @@
 import { CalendarDays, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 import React from "react";
 
 const ExperienceSectionP = () => {
@@ -11,9 +12,16 @@ const ExperienceSectionP = () => {
       <div className="sm:col-span-3 inline-flex flex-col">
         <div className="sm:inline-grid mb-6 inline-flex flex-col">
           <div className="sm:grid sm:grid-cols-4 flex flex-col">
-            <div className="col-span-2">
+            <div className="col-span-2 inline-grid">
               <span className="font-semibold">Python Developer</span>
-              <p className="text-sm text-white/80">Cybercraft Labs Pvt Ltd</p>
+              <Link
+                href="https://cybercraftlabs.org/"
+                className="hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-300 hover:to-sky-400 hover:bg-clip-text transition-all duration-300 text-sm text-white/80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cybercraft Labs Pvt Ltd
+              </Link>
             </div>
             <div className="col-span-2 flex flex-row gap-2 items-center justify-end text-white/60">
               <MapPin className="size-4" />
@@ -69,11 +77,16 @@ const ExperienceSectionP = () => {
         </div>
         <div className="sm:inline-grid mb-6 inline-flex flex-col">
           <div className="sm:grid sm:grid-cols-4 flex flex-col">
-            <div className="col-span-2">
+            <div className="col-span-2 inline-grid">
               <span className="font-semibold">Market Representative</span>
-              <p className="text-sm text-white/80">
+              <Link
+                href="https://www.nouvmed.com/"
+                className="hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-300 hover:to-sky-400 hover:bg-clip-text transition-all duration-300 text-sm text-white/80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Nouveau Medicament Private Limited
-              </p>
+              </Link>
             </div>
             <div className="col-span-2 flex flex-row gap-2 items-center justify-end text-white/60">
               <MapPin className="size-4" />
