@@ -34,27 +34,27 @@ const ExperienceSectionP = () => {
             <div className="flex flex-row gap-3 items-center justify-start">
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Sales
+                Python
               </Badge>
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Market Research
+                Automation
               </Badge>
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Client Relations
+                Cybersecurity
               </Badge>
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Market Data
+                Internal API
               </Badge>
             </div>
           </div>
@@ -99,27 +99,27 @@ const ExperienceSectionP = () => {
             <div className="flex flex-row gap-3 items-center justify-start">
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Python
+                Sales
               </Badge>
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Automation
+                Market Research
               </Badge>
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Cybersecurity
+                Client Relations
               </Badge>
               <Badge
                 variant="outline"
-                className="outline outline-white/25 text-white/50"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Internal API
+                Market Data
               </Badge>
             </div>
           </div>

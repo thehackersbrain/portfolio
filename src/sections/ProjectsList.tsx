@@ -316,7 +316,7 @@ const cards = [
     },
   },
   {
-    description: "Personal (HTB) - 2023",
+    description: "Personal (THB) - 2023",
     title: "CHIP-8 Emulator",
     src: "https://opengraph.githubassets.com/c5990194d381e26954348ad60848cbd60b542a9b7e31715b1807b51a484dc0f8/thehackersbrain/chip8",
     ctaText: "Visit",

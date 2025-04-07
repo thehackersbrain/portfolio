@@ -10,8 +10,9 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
-import EducationSectionP from "@/sections/projects/Education";
-import ExperienceSectionP from "@/sections/projects/Experience";
+import EducationSectionP from "@/sections/about/Education";
+import ExperienceSectionP from "@/sections/about/Experience";
+import FeaturedProjectsSectionP from "@/sections/about/FeaturedProjects";
 
 const socialLinks = [
   {
@@ -94,8 +95,7 @@ const AboutPage = () => {
           {/*==== starts here ====*/}
           <EducationSectionP />
           <ExperienceSectionP />
-          <EducationSectionP />
-          <EducationSectionP />
+          <FeaturedProjectsSectionP />
           <EducationSectionP />
           {/*==== ends here ====*/}
         </div>
