@@ -98,33 +98,33 @@ const FeaturedProjectsSectionP = () => {
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Typescript
+                Arch Linux
               </Badge>
               <Badge
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Next.js
+                Git/Github
               </Badge>
               <Badge
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Tailwindcss
+                Tor Integration
               </Badge>
               <Badge
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
-                Appwrite
+                Vast tools repo
               </Badge>
             </div>
           </div>
           <div>
             <ul className="list-disc px-3 text-sm text-white/60">
-              <li>Responsive &amp; Modern Design</li>
-              <li>Full-Functional from Scratch Backend</li>
-              <li>Build with React, Appwrite, Tailwind CSS</li>
+              <li>Amnesic and Live System</li>
+              <li>Minimal System with Vast Tools Repositories</li>
+              <li>Tor Integration with Application Security Implemented</li>
             </ul>
           </div>
         </div>
