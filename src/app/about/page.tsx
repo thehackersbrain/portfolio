@@ -13,6 +13,7 @@ import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
 import EducationSectionP from "@/sections/about/Education";
 import ExperienceSectionP from "@/sections/about/Experience";
 import FeaturedProjectsSectionP from "@/sections/about/FeaturedProjects";
+import SkillsToolsSectionP from "@/sections/about/SkillsTools";
 
 const socialLinks = [
   {
@@ -96,7 +97,7 @@ const AboutPage = () => {
           <EducationSectionP />
           <ExperienceSectionP />
           <FeaturedProjectsSectionP />
-          <EducationSectionP />
+          <SkillsToolsSectionP />
           {/*==== ends here ====*/}
         </div>
       </div>
