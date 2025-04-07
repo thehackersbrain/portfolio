@@ -91,8 +91,8 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto my-6 max-w-lg px-16">
-        <div className="flex flex-col items-center justify-center gap-3">
+      <div className="container mx-auto my-6 max-w-lg sm:px-16">
+        <div className="flex flex-col items-center justify-center gap-3 mx-4">
           {/*==== starts here ====*/}
           <EducationSectionP />
           <ExperienceSectionP />
