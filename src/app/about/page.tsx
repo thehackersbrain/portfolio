@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
 import EducationSectionP from "@/sections/projects/Education";
+import ExperienceSectionP from "@/sections/projects/Experience";
 
 const socialLinks = [
   {
@@ -92,7 +93,7 @@ const AboutPage = () => {
         <div className="flex flex-col items-center justify-center gap-3">
           {/*==== starts here ====*/}
           <EducationSectionP />
-          <EducationSectionP />
+          <ExperienceSectionP />
           <EducationSectionP />
           <EducationSectionP />
           <EducationSectionP />
