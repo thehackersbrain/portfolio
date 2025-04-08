@@ -6,29 +6,8 @@ import {
   InstagramIcon,
 } from "lucide-react";
 import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
+import { socialLinks } from "@/data";
 
-const socialLinks = [
-  {
-    name: GithubIcon,
-    href: "https://github.com/thehackersbrain",
-  },
-  {
-    name: TwitterIcon,
-    href: "https://x.com/thehackersbrain",
-  },
-  {
-    name: WhatsAppIcon,
-    href: "https://wa.me/+917488930330",
-  },
-  {
-    name: InstagramIcon,
-    href: "https://instagram.com/thehackersbrain",
-  },
-  {
-    name: LinkedinIcon,
-    href: "https://linkedin.com/in/thehackersbrainn",
-  },
-];
 
 const FooterSection = () => {
   return (

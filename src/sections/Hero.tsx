@@ -7,6 +7,7 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 import CircleIcon from "@/assets/icons/chrome.svg";
 import Link from "next/link";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import { basicInfo } from "@/data";
 
 const HeroSection = () => {
   return (
@@ -119,18 +120,16 @@ const HeroSection = () => {
               <div className="bg-green-500 absolute inset-0 rounded-full animate-[ping_1s_cubic-bezier(0,0,0.2,1)_infinite] scale-135"></div>
             </div>
             <div className="text-sm font-medium">
-              Available for new projects
+              {basicInfo.status}
             </div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Security Researcher &amp; Software Engineer
+            {basicInfo.title}
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I&#39;m Gaurav, a Cyber Security Researcher and Developer with over
-            a half decade (5+ years) of experience in development and security.{" "}
-            Mostly involved in Bug Hunting or Freelance projects.
+            {basicInfo.description}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
@@ -142,7 +141,7 @@ const HeroSection = () => {
             <ArrowDown className="size-4 animate-bounce" />
           </Link>
           <Link
-            href="mailto:gauravraj0408@gmail.com"
+            href={`mailto:${basicInfo.email}`}
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:cursor-pointer"
           >
             <span className="animate-wave origin-[60%_60%]">👋</span>

@@ -1,6 +1,7 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import Link from "next/link";
+import { basicInfo } from "@/data";
 
 const ContactPage = () => {
   return (
@@ -27,7 +28,7 @@ const ContactPage = () => {
             get back to you promptly!
           </p>
           <Link
-            href="mailto:gauravraj0408@gmail.com"
+            href={`mailto:${basicInfo.email}`}
             className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:cursor-pointer float-up-an"
             rel="noopener noreferrer"
             target="_blank"

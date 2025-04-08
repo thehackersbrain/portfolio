@@ -10,133 +10,8 @@ import CardHeader from "@/components/CardHeader";
 import ToolBoxItems from "@/components/ToolBoxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import LinuxIcon from "@/assets/icons/archlinux.svg";
-import GentooIcon from "@/assets/icons/gentoo.svg";
-import VimIcon from "@/assets/icons/vim.svg";
-import TmuxIcon from "@/assets/icons/tmux.svg";
-import RustIcon from "@/assets/icons/rust.svg";
-import BurpIcon from "@/assets/icons/burpsuite.svg";
-import ReverseEngineeringIcon from "@/assets/icons/radare2.svg";
-import QemuIcon from "@/assets/icons/qemu.svg";
-import DockerIcon from "@/assets/icons/docker.svg";
-import TlohnBook from "@/assets/images/Lawsofhumannature.jpg";
-import TeBook from "@/assets/images/the-exorcist.jpg";
-import TspBook from "@/assets/images/the-silent-patient.jpg";
-import GitwBook from "@/assets/images/ghost-in-the-wires.jpg";
-import TiiBook from "@/assets/images/the-intelligent-investor.jpg";
+import { basicInfo } from "@/data";
 
-const toolboxItems = [
-  {
-    title: "Arch Linux",
-    iconType: LinuxIcon,
-  },
-  {
-    title: "Gentoo",
-    iconType: GentooIcon,
-  },
-  {
-    title: "Neovim",
-    iconType: VimIcon,
-  },
-  {
-    title: "Tmux",
-    iconType: TmuxIcon,
-  },
-  {
-    title: "Rust",
-    iconType: RustIcon,
-  },
-  {
-    title: "Radare2",
-    iconType: ReverseEngineeringIcon,
-  },
-  {
-    title: "Burp Suite",
-    iconType: BurpIcon,
-  },
-  {
-    title: "QEMU & KVM",
-    iconType: QemuIcon,
-  },
-  {
-    title: "Docker",
-    iconType: DockerIcon,
-  },
-];
-const hobbies = [
-  {
-    title: "Reading",
-    emoji: "📖",
-    left: "5%",
-    top: "5%",
-  },
-  {
-    title: "Hacking",
-    emoji: "💻",
-    left: "50%",
-    top: "5%",
-  },
-  {
-    title: "Boxing",
-    emoji: "🥊",
-    left: "10%",
-    top: "35%",
-  },
-  {
-    title: "Psychology",
-    emoji: "🧠",
-    left: "35%",
-    top: "40%",
-  },
-  {
-    title: "Anime",
-    emoji: "🎌",
-    left: "5%",
-    top: "65%",
-  },
-  {
-    title: "Biking",
-    emoji: "🏍️",
-    left: "45%",
-    top: "70%",
-  },
-  {
-    title: "Whiskey",
-    emoji: "🥃",
-    left: "55%",
-    top: "25%",
-  },
-  {
-    title: "Philosophy",
-    emoji: "📜",
-    left: "20%",
-    top: "75%",
-  },
-  {
-    title: "Coding",
-    emoji: "🖥️",
-    left: "75%",
-    top: "30%",
-  },
-];
-
-const testimonials = [
-  {
-    src: TlohnBook,
-  },
-  {
-    src: TeBook,
-  },
-  {
-    src: TspBook,
-  },
-  {
-    src: GitwBook,
-  },
-  {
-    src: TiiBook,
-  },
-];
 
 const AboutSection = () => {
   const constraintRef = useRef(null);
@@ -157,7 +32,7 @@ const AboutSection = () => {
                 description="Explore the books shaping my perspectives."
               />
               <div className="mx-auto mt-2 md:mt-0 inline-grid w-full justify-center items-center">
-                <AnimatedTestimonials testimonials={testimonials} />
+                <AnimatedTestimonials testimonials={basicInfo.books} />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
@@ -167,12 +42,12 @@ const AboutSection = () => {
                 className=""
               />
               <ToolBoxItems
-                items={toolboxItems}
+                items={basicInfo.toolboxItems}
                 className=""
                 itemsWrapperClassName="animate-move-left"
               />
               <ToolBoxItems
-                items={toolboxItems}
+                items={basicInfo.toolboxItems}
                 className="mt-6"
                 itemsWrapperClassName="animate-move-right [animation-duration:15s]"
               />
@@ -186,7 +61,7 @@ const AboutSection = () => {
                 className="px-6 py-6"
               />
               <div className="relative flex-1" ref={constraintRef}>
-                {hobbies.map((hobby) => (
+                {basicInfo.hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
                     className="inline-flex items-center gap-2 px-6 primary-gradient rounded-full py-1.5 absolute"
