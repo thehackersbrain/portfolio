@@ -10,28 +10,28 @@ const blogs = [
     date: "2024-12-01",
     description:
       "Learn how to create a free hacking lab on the cloud using Docker and Kali Linux. This guide covers setting up a secure, cost-effective environment for penetration testing and cybersecurity experiments. Completely on Cloud for free.",
-    link: "https://thehackersbrain.xyz/blog/creating-a-hacking-lab-on-cloud-using-docker-for-free/",
+    link: "https://v1.thehackersbrain.xyz/blog/creating-a-hacking-lab-on-cloud-using-docker-for-free/",
   },
   {
     title: "Create an Image Steganography Program in Python",
     date: "2023-08-28",
     description:
       "Discover how to create an image steganography tool in Python. Learn to securely hide and extract data within PNG images using PIL and cryptography modules. Enhance your cybersecurity skills with this detailed guide.",
-    link: "https://thehackersbrain.xyz/blog/create-an-image-steganography-program-in-python/",
+    link: "https://v1.thehackersbrain.xyz/blog/create-an-image-steganography-program-in-python/",
   },
   {
     title: "Comprehensive Guide to Find & Exploit SSRF Vulnerabilities",
     date: "2024-07-11",
     description:
       "Explore an in-depth guide on finding and exploiting Server-Side Request Forgery (SSRF) vulnerabilities. Learn advanced techniques, practical examples, and methods to identify, bypass, and exploit SSRF for comprehensive web security testing.",
-    link: "https://thehackersbrain.xyz/blog/comprehensive-guide-to-finding-and-exploiting-ssrf-vulnerabilities/",
+    link: "https://v1.thehackersbrain.xyz/blog/comprehensive-guide-to-finding-and-exploiting-ssrf-vulnerabilities/",
   },
   {
     title: "The Importance of Secure Coding Practices - Cybercraft Labs",
     date: "2024-03-27",
     description:
       "Learn how to create a free hacking lab on the cloud using Docker and Kali Linux. This guide covers setting up a secure, cost-effective environment for penetration testing and cybersecurity experiments. Completely on Cloud for free.",
-    link: "https://thehackersbrain.xyz/blog/the-importance-of-secure-coding-practices-cybercraft-labs/",
+    link: "https://v1.thehackersbrain.xyz/blog/the-importance-of-secure-coding-practices-cybercraft-labs/",
   },
   {
     title: "Unveiling the Dangers of Insecure Deserialization and more",
@@ -45,7 +45,7 @@ const blogs = [
     date: "2024-05-01",
     description:
       "Explore the critical role of security researchers in understanding development and deployment processes within cloud environments. Dive into real-world scenarios, expert insights, and how Cybercraftlab empowers researchers for cybersecurity excellence",
-    link: "https://thehackersbrain.xyz/blog/navigating-the-cloud/",
+    link: "https://v1.thehackersbrain.xyz/blog/navigating-the-cloud/",
   },
 ];
 
