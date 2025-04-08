@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 import "./globals.css";
 import HeaderSection from "@/sections/Header";
 import FooterSection from "@/sections/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -89,6 +90,7 @@ export default function RootLayout({
         {children}
         <FooterSection />
       </body>
+      <GoogleAnalytics gaId="G-CEG2JP4Y9V" />
     </html>
   );
 }

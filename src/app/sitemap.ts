@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
+import { siteUrl } from "@/data";
 
-const siteUrl = "https://dev.thehackersbrain.xyz";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
