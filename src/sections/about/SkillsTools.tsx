@@ -20,6 +20,66 @@ const SkillsToolsSectionP = () => {
                 variant="outline"
                 className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
               >
+                Python
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                Rust
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                C
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                C++
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                C#
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                Java
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                JavaScript
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                TypeScript
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                Golang
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
+                Ruby
+              </Badge>
+              <Badge
+                variant="outline"
+                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+              >
                 HTML
               </Badge>
               <Badge
