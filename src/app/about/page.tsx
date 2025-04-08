@@ -3,18 +3,14 @@ import React from "react";
 import {
   MapPin,
   Mail,
-  GithubIcon,
-  TwitterIcon,
-  InstagramIcon,
-  LinkedinIcon,
 } from "lucide-react";
 import Link from "next/link";
-import WhatsAppIcon from "@/assets/icons/whatsapp.svg";
 import EducationSectionP from "@/sections/about/Education";
 import ExperienceSectionP from "@/sections/about/Experience";
 import FeaturedProjectsSectionP from "@/sections/about/FeaturedProjects";
 import SkillsToolsSectionP from "@/sections/about/SkillsTools";
 import { Metadata } from "next";
+import { socialLinks } from "@/data";
 
 export const metadata: Metadata = {
   title: "Gaurav Raj (@thehackersbrain) | About Me | Portfolio",
@@ -22,28 +18,6 @@ export const metadata: Metadata = {
     "Hi, I'm Gaurav Raj, I'm a Cyber Security Researcher and Developer with over a half decade (5+ years) of experience. Skilled in multiple programming languages like Python, Rust, JavaScript, C, C++, and more. My expertise extends to and beyond, DevOps, Reverse-Engineering, Development (Full Stack Software Developer), and more. Mostly involved in Bug-Hunting or FreeLance about. But at the core, I'm just a quick and passionate learner who likes to explore",
 };
 
-const socialLinks = [
-  {
-    name: GithubIcon,
-    href: "https://github.com/thehackersbrain",
-  },
-  {
-    name: TwitterIcon,
-    href: "https://x.com/thehackersbrain",
-  },
-  {
-    name: WhatsAppIcon,
-    href: "https://wa.me/+917488930330",
-  },
-  {
-    name: InstagramIcon,
-    href: "https://instagram.com/thehackersbrain",
-  },
-  {
-    name: LinkedinIcon,
-    href: "https://linkedin.com/in/thehackersbrainn",
-  },
-];
 
 const AboutPage = () => {
   return (
