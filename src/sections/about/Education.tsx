@@ -9,7 +9,7 @@ const EducationSectionP = () => {
       <div className="col-span-3">
         {
           aboutMeResume.education.map((edu, index) => (
-            <div className="grid grid-cols-4 mb-3">
+            <div className="grid grid-cols-4 mb-3" key={index}>
               <div className="col-span-3">
                 <span className="font-semibold">{edu.title}</span>
                 <p className="text-sm text-white/80">

@@ -47,6 +47,34 @@ export const aboutMeResume = {
             year: "2018",
         }
     ],
+    experience: [
+        {
+            title: "Python Developer",
+            company: "Cybercraft Labs Pvt Ltd",
+            companyUrl: "https://cybercraftlabs.org/",
+            year: "Sept 2023 - Nov 2024",
+            location: "Patna, Bihar",
+            tags: ["Python", "Automation", "Cybersecurity", "Internal API"],
+            results: [
+                "Developed Python scripts for automating internal security tasks and vulnerability assessments.",
+                "Collaborated with the researchers to create proof-of-concept exploits and payloads.",
+                "Built and maintained internal tools for pentesting and bug bounty workflows."
+            ]
+        },
+        {
+            title: "Market Representative",
+            company: "Nouveau Medicament Private Limited",
+            companyUrl: "https://www.nouvmed.com/",
+            year: "Apr 2023 - Sept 2023",
+            location: "Patna, Bihar",
+            tags: ["Sales", "Market Research", "Client Relations", "Market Data"],
+            results: [
+                "Represented the company in regional medical product promotions and demos.",
+                "Conducted field research and competitor analysis to improve outreach",
+                "Managed relationships with local pharmacies and distributors to expand the sales network."
+            ]
+        }
+    ],
     programmingLanguages: [
         "Python", "Rust", "C", "C++", "C#", "Java", "JavaScript", "TypeScript", "HTML", "CSS", "Bash", "PHP", "Go", "Ruby", "Dart", "SQL", "Kotlin", "Assembly"
     ],
