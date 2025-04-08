@@ -75,6 +75,47 @@ export const aboutMeResume = {
             ]
         }
     ],
+    featuredProjects: [
+        {
+            title: "Snapgram",
+            projectUrl: "https://snapgram-two-self.vercel.app/",
+            company: "Cybercraft Labs Pvt Ltd",
+            companyUrl: "https://cybercraftlabs.org/",
+            time: "Jul 2024",
+            tags: ["TypeScript", "Next.js", "TailwindCSS", "Appwrite"],
+            results: [
+                "Responsive & Modern Design",
+                "Full-Functional from Scratch Backend",
+                "Built with React, Appwrite, Tailwind CSS"
+            ]
+        },
+        {
+            title: "Vigilante Linux",
+            projectUrl: "https://vigarch.cybercraftlabs.org/",
+            company: "Cybercraft Labs Pvt Ltd",
+            companyUrl: "https://cybercraftlabs.org/",
+            time: "Apr 2024",
+            tags: ["Arch Linux", "Git/Github", "Tor Integration", "Vast tools repo"],
+            results: [
+                "Amnesic and Live System",
+                "Minimal System with Vast Tools Repositories",
+                "Tor Integration with Application Security Implemented"
+            ]
+        },
+        {
+            title: "CHIP-8 Emulator",
+            projectUrl: "https://github.com/thehackersbrain/chip8/",
+            company: "Personal (THB)",
+            companyUrl: "https://thehackersbrain.xyz/",
+            time: "Feb 2023",
+            tags: ["Rust", "Git/Github", "System Programming", "x86 Assembly"],
+            results: [
+                "Gaming Console Emulator in Rust",
+                "Learned Systems Programming and x86 Assembly",
+                "Memory Management and CPU Emulation"
+            ],
+        }
+    ],
     programmingLanguages: [
         "Python", "Rust", "C", "C++", "C#", "Java", "JavaScript", "TypeScript", "HTML", "CSS", "Bash", "PHP", "Go", "Ruby", "Dart", "SQL", "Kotlin", "Assembly"
     ],
