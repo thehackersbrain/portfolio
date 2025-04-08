@@ -14,6 +14,24 @@ import TeBook from "@/assets/images/the-exorcist.jpg";
 import TspBook from "@/assets/images/the-silent-patient.jpg";
 import GitwBook from "@/assets/images/ghost-in-the-wires.jpg";
 import TiiBook from "@/assets/images/the-intelligent-investor.jpg";
+import ReactIcon from "@/assets/icons/tech/reactjs.jpg";
+import AppwriteIcon from "@/assets/icons/tech/appwrite.jpg";
+import TailwindIcon from "@/assets/icons/tech/tailwindcss.jpg";
+import ReactQIcon from "@/assets/icons/tech/reactjs.jpg";
+import TsIcon from "@/assets/icons/tech/typescript.jpg";
+import snapgramImg from "@/assets/images/snapgram.png";
+import vigarchImg from "@/assets/images/vigarch.png";
+import chip8Img from "@/assets/images/chip8.png";
+import TorIcon from "@/assets/icons/tech/tor.png";
+import LinuxxIcon from "@/assets/icons/tech/linux.png";
+import GitIcon from "@/assets/icons/tech/git.png";
+import GithubLogoIcon from "@/assets/icons/tech/github.png";
+import CicdIcon from "@/assets/icons/tech/cicd.png";
+import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
+import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
+import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
+import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
+import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 
 
 export const siteUrl = "https://thehackersbrain.xyz";
@@ -137,6 +155,196 @@ export const basicInfo = {
         },
     ]
 }
+
+export const portfolioProjects = [
+    {
+        company: "Cybercraft Labs Pvt Ltd",
+        year: "2024",
+        title: "Social Media WebApp",
+        results: [
+            {
+                title: "Responsive & Modern Design",
+            },
+            { title: "Fully-Functional from Scratch Backend" },
+            { title: "Built with React, Appwrite, Tailwind CSS" },
+        ],
+        tech: [
+            {
+                name: "ReactJS",
+                image: ReactIcon,
+            },
+            {
+                name: "Appwrite",
+                image: AppwriteIcon,
+            },
+            {
+                name: "Tailwind CSS",
+                image: TailwindIcon,
+            },
+            {
+                name: "React Query",
+                image: ReactQIcon,
+            },
+            {
+                name: "TypeScript",
+                image: TsIcon,
+            },
+        ],
+        link: "https://snapgram-two-self.vercel.app/",
+        githubLink: "https://github.com/thehackersbrain/snapgram",
+        image: snapgramImg,
+    },
+    {
+        company: "Cybercraft Labs Pvt Ltd",
+        year: "2024",
+        title: "Vigilante Arch - Live & Anonymous OS",
+        results: [
+            { title: "Amnesic and Live System" },
+            { title: "Minimal System with Vast Tools Repo" },
+            { title: "Tor Integration with Application Security" },
+        ],
+        tech: [
+            {
+                name: "Tor",
+                image: TorIcon,
+            },
+            {
+                name: "Linux",
+                image: LinuxxIcon,
+            },
+            {
+                name: "Git",
+                image: GitIcon,
+            },
+            {
+                name: "GitHub",
+                image: GithubLogoIcon,
+            },
+            {
+                name: "CI/CD",
+                image: CicdIcon,
+            },
+        ],
+        link: "https://vigarch.cybercraftlabs.org/",
+        githubLink: "https://github.com/cybercraftlabs/vigarch-os",
+        image: vigarchImg,
+    },
+    {
+        company: "Personal (THB)",
+        year: "2023",
+        title: "CHIP-8 Emulator",
+        results: [
+            { title: "Gaming Console Emulator in Rust" },
+            { title: "Learned Systems Programming & Assembly" },
+            { title: "Memory Management & CPU Emulation" },
+        ],
+        tech: [
+            {
+                name: "ReactJS",
+                image: ReactIcon,
+            },
+            {
+                name: "Appwrite",
+                image: AppwriteIcon,
+            },
+            {
+                name: "Tailwind CSS",
+                image: TailwindIcon,
+            },
+            {
+                name: "React Query",
+                image: ReactQIcon,
+            },
+        ],
+        link: "https://thehackersbrain.github.io/chip8",
+        githubLink: "https://github.com/thehackersbrain/chip8",
+        image: chip8Img,
+    },
+];
+
+export const projects = [
+    {
+        name: "Carepulse",
+        githubLink: "https://github.com/thehackersbrain/carepulse",
+        externalLink: "https://carepulse-theta.vercel.app/",
+        date: "2024-07-11",
+        description:
+            "A healthcare patient management application using Next.js, TypeScript, and TailwindCSS. This system enables patients to register, book, and manage appointments with doctors, while providing administrators tools for scheduling, confirming, and canceling appointments. It includes SMS notifications, file upload with Appwrite storage, and performance tracking using Sentry.",
+    },
+    {
+        name: "Brainwave",
+        githubLink: "https://github.com/thehackersbrain/brainwave",
+        externalLink: "https://brainwave-pearl-five.vercel.app/",
+        date: "2024-07-10",
+        description:
+            "Brainwave, a modern UI/UX website using React.js and TailwindCSS, built with Vite. This project showcases sleek design, parallax animations, complex UI geometry, and stylish gradients. It features beautiful sections including hero, services, features, and more, ensuring responsive functionality across all devices. Brainwave exemplifies contemporary web dev practices.",
+    },
+    {
+        name: "HooBank",
+        githubLink: "https://github.com/thehackersbrain/hoobank",
+        externalLink: "https://hoobank-two-wine.vercel.app/",
+        date: "2024-07-08",
+        description:
+            "Created HooBank, a modern UI/UX website utilizing React.js and TailwindCSS. This project emphasizes sleek and responsive design, showcasing advanced web development skills and a focus on user experience. HooBank demonstrates proficiency in building visually appealing, high-performance web applications with contemporary front-end technologies.",
+    },
+    {
+        name: "Modern Portfolio",
+        githubLink: "https://github.com/thehackersbrain/minimal-portfolio",
+        externalLink: "https://minimal-portfolio-blue.vercel.app/",
+        date: "2024-07-07",
+        description:
+            "Developed a modern portfolio web app using Next.js, Three.js, Framer Motion, and TailwindCSS. This project showcases a captivating hero section, interactive 3D elements, a dynamic testimonials area, and a visually striking canvas effect. It demonstrates advanced UI/UX design, responsiveness, and a unique presentation of personal information.",
+    },
+    {
+        name: "Vigilante Arch",
+        githubLink: "https://github.com/cybercraftlabs/vigarch-os",
+        externalLink: "https://vigarch.cybercraftlabs.org/",
+        date: "2024-04-09",
+        description:
+            "Vigilante Arch is the ultimate toolkit for modern-day cyber vigilantes. Built on the robust foundation of Arch Linux, The system equips you with the tools and anonymity you need to defend or attack the digital realm. Forge your path as a digital guardian. Vigilante Arch empowers hackers, security professionals, and geeks alike to explore.",
+    },
+    {
+        name: "Passcraft",
+        githubLink: "https://github.com/thehackersbrain/passcraft",
+        externalLink: "https://github.com/thehackersbrain/passcraft",
+        date: "2023-05-13",
+        description:
+            "PassCraft is a powerful and versatile tool designed to assist in the creation of password wordlists based on an individual's personal information. It provides a streamlined and automated approach to generate customized wordlists, enhancing the efficiency of password cracking and security assessment processes. Dictionary attacks simplified.",
+    },
+];
+
+export const testimonials = [
+    {
+        name: "Alex Turner",
+        position: "CTO @ CyberShield",
+        text: "Gaurav was instrumental in securing our infrastructure against critical threats. His ability to identify and patch vulnerabilities before they became issues is truly exceptional. We trust him completely!",
+        avatar: memojiAvatar1,
+    },
+    {
+        name: "Olivia Green",
+        position: "Lead Developer @ SecureCode",
+        text: "Working with Gaurav was a game-changer. His deep understanding of secure coding practices helped us eliminate major security flaws. Our applications are now more robust than ever.",
+        avatar: memojiAvatar2,
+    },
+    {
+        name: "Daniel White",
+        position: "CEO @ PentestPro",
+        text: "Gaurav's penetration testing skills are second to none. He uncovered vulnerabilities that other teams missed, helping us reinforce our security posture significantly. We couldn’t be more impressed.",
+        avatar: memojiAvatar3,
+    },
+    {
+        name: "Emily Carter",
+        position: "Security Engineer @ GlobalTech",
+        text: "Gaurav is a true cybersecurity expert. His research into advanced exploitation techniques gave our team valuable insights. His contributions have strengthened our defenses tremendously.",
+        avatar: memojiAvatar4,
+    },
+    {
+        name: "Michael Brown",
+        position: "Director of IT @ MegaCorp",
+        text: "Gaurav’s expertise in secure software development has been invaluable. He not only built high-performance systems but also ensured they were resilient against real-world threats. Highly recommended!",
+        avatar: memojiAvatar5,
+    },
+];
 
 export const blogs = [
     {

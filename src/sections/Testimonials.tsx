@@ -2,45 +2,8 @@ import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import Card from "@/components/Card";
 import { Fragment } from "react";
+import { testimonials } from "@/data";
 
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
-
-const testimonials = [
-  {
-    name: "Alex Turner",
-    position: "CTO @ CyberShield",
-    text: "Gaurav was instrumental in securing our infrastructure against critical threats. His ability to identify and patch vulnerabilities before they became issues is truly exceptional. We trust him completely!",
-    avatar: memojiAvatar1,
-  },
-  {
-    name: "Olivia Green",
-    position: "Lead Developer @ SecureCode",
-    text: "Working with Gaurav was a game-changer. His deep understanding of secure coding practices helped us eliminate major security flaws. Our applications are now more robust than ever.",
-    avatar: memojiAvatar2,
-  },
-  {
-    name: "Daniel White",
-    position: "CEO @ PentestPro",
-    text: "Gaurav's penetration testing skills are second to none. He uncovered vulnerabilities that other teams missed, helping us reinforce our security posture significantly. We couldn’t be more impressed.",
-    avatar: memojiAvatar3,
-  },
-  {
-    name: "Emily Carter",
-    position: "Security Engineer @ GlobalTech",
-    text: "Gaurav is a true cybersecurity expert. His research into advanced exploitation techniques gave our team valuable insights. His contributions have strengthened our defenses tremendously.",
-    avatar: memojiAvatar4,
-  },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Gaurav’s expertise in secure software development has been invaluable. He not only built high-performance systems but also ensured they were resilient against real-world threats. Highly recommended!",
-    avatar: memojiAvatar5,
-  },
-];
 
 const TestimonialsSection = () => {
   return (
