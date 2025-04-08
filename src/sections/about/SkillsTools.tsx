@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import React from "react";
+import { aboutMeResume } from "@/data";
 
 const SkillsToolsSectionP = () => {
   return (
@@ -16,102 +17,17 @@ const SkillsToolsSectionP = () => {
           </div>
           <div className="my-3 gap-3 max-w-screen">
             <div className="flex flex-row gap-3 items-center justify-start flex-wrap">
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Python
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Rust
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                C
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                C++
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                C#
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Java
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                JavaScript
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                TypeScript
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Golang
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Ruby
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                HTML
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                CSS/SCSS
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                TypeScript
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                JavaScript
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                PHP
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                SQL
-              </Badge>
+              {
+                aboutMeResume.programmingLanguages.map((lang) => (
+                  <Badge
+                    key={lang}
+                    variant="outline"
+                    className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+                  >
+                    {lang}
+                  </Badge>
+                ))
+              }
             </div>
           </div>
         </div>
@@ -123,102 +39,17 @@ const SkillsToolsSectionP = () => {
           </div>
           <div className="my-3 gap-3 max-w-screen">
             <div className="flex flex-row gap-3 items-center justify-start flex-wrap">
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Tailwind CSS
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Material UI
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                ShadCN UI
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Aceternity UI
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Bootstrap
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                React.js
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Next.js
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Framer Motion
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Webpack
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Turbopack
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Express
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Flask
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Django
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Wordpress
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Joomla
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Appwrite
-              </Badge>
+              {
+                aboutMeResume.technologies.map((tech) => (
+                  <Badge
+                    key={tech}
+                    variant="outline"
+                    className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+                  >
+                    {tech}
+                  </Badge>
+                ))
+              }
             </div>
           </div>
         </div>
@@ -230,71 +61,22 @@ const SkillsToolsSectionP = () => {
           </div>
           <div className="my-3 gap-3 max-w-screen">
             <div className="flex flex-row gap-3 items-center justify-start flex-wrap">
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Linux
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Docker
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Radare2
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Qemu
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                KVM
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Gentoo
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Burpsuite
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Tmux
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Neovim
-              </Badge>
-              <Badge
-                variant="outline"
-                className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
-              >
-                Vim
-              </Badge>
+              {
+                aboutMeResume.tools.map((tool) => (
+                  <Badge
+                    key={tool}
+                    variant="outline"
+                    className="outline outline-white/25 text-white/50 float-up-an transition-all duration-300"
+                  >
+                    {tool}
+                  </Badge>
+                ))
+              }
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

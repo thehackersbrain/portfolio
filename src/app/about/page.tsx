@@ -10,7 +10,7 @@ import ExperienceSectionP from "@/sections/about/Experience";
 import FeaturedProjectsSectionP from "@/sections/about/FeaturedProjects";
 import SkillsToolsSectionP from "@/sections/about/SkillsTools";
 import { Metadata } from "next";
-import { socialLinks } from "@/data";
+import { socialLinks, basicInfo } from "@/data";
 
 export const metadata: Metadata = {
   title: "Gaurav Raj (@thehackersbrain) | About Me | Portfolio",
@@ -34,24 +34,24 @@ const AboutPage = () => {
 
         <div className="mx-auto container flex flex-col items-center justify-center gap-3">
           <h1 className="font-altfont font-extrabold text-3xl md:text-5xl text-center mt-6 tracking-wide">
-            Gaurav Raj
+            {basicInfo.name}
           </h1>
           <p className="mt-2 text-center md:text-lg lg:text-xl primary-gradient text-transparent bg-clip-text">
-            Security Reseacher and Software Engineer
+            {basicInfo.title}
           </p>
           <div className="flex flex-col gap-3 mt-2 items-center justify-center">
             <div className="inline-flex flex-col md:grid lg:grid lg:grid-cols-2 md:grid-cols-2 gap-3 items-center text-[#CBD5E1]">
               <div className="inline-flex gap-2 justify-center md:justify-start lg:justify-start items-center">
                 <MapPin className="h-5 w-5" />
-                <p>Patna/Bihar</p>
+                <p>{basicInfo.location}</p>
               </div>
               <div className="inline-flex gap-2 justify-center md:justify-start lg:justify-start -ml-8 items-center">
                 <Mail className="h-5 w-5" />
                 <Link
-                  href="mailto:gauravraj0408@gmail.com"
+                  href={`mailto:${basicInfo.email}`}
                   className="hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-300 hover:to-sky-400 hover:bg-clip-text transition-all duration-300"
                 >
-                  me@thehackersbrain.xyz
+                  {basicInfo.email}
                 </Link>
               </div>
             </div>
