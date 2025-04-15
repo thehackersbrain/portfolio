@@ -9,11 +9,11 @@ import BurpIcon from "@/assets/icons/burpsuite.svg";
 import ReverseEngineeringIcon from "@/assets/icons/radare2.svg";
 import QemuIcon from "@/assets/icons/qemu.svg";
 import DockerIcon from "@/assets/icons/docker.svg";
-import TlohnBook from "@/assets/images/Lawsofhumannature.jpg";
-import TeBook from "@/assets/images/the-exorcist.jpg";
-import TspBook from "@/assets/images/the-silent-patient.jpg";
-import GitwBook from "@/assets/images/ghost-in-the-wires.jpg";
-import TiiBook from "@/assets/images/the-intelligent-investor.jpg";
+import TlohnBook from "@/assets/images/books/Lawsofhumannature.jpg";
+import TeBook from "@/assets/images/books/the-exorcist.jpg";
+import TspBook from "@/assets/images/books/the-silent-patient.jpg";
+import GitwBook from "@/assets/images/books/ghost-in-the-wires.jpg";
+import TiiBook from "@/assets/images/books/the-intelligent-investor.jpg";
 import ReactIcon from "@/assets/icons/tech/reactjs.jpg";
 import AppwriteIcon from "@/assets/icons/tech/appwrite.jpg";
 import TailwindIcon from "@/assets/icons/tech/tailwindcss.jpg";
@@ -32,6 +32,8 @@ import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
 import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
+import HttsnBook from "@/assets/images/books/how-to-take-smart-notes.jpg";
+import Ahbook from "@/assets/images/books/book-cover.png";
 
 
 export const siteUrl = "https://thehackersbrain.xyz";
@@ -152,6 +154,12 @@ export const basicInfo = {
         },
         {
             src: TiiBook,
+        },
+        {
+            src: HttsnBook,
+        },
+        {
+            src: Ahbook,
         },
     ]
 }
