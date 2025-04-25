@@ -272,6 +272,13 @@ export const portfolioProjects = [
 
 export const projects = [
     {
+        name: "Tech Book - LaTex",
+        githubLink: "https://github.com/thehackersbrain/tech-book-template",
+        externalLink: "https://github.com/thehackersbrain/tech-book-template",
+        date: "2025-04-26",
+        description: "A LaTeX template for creating technical books, articles, and reports. This template is designed to be user-friendly and customizable, allowing authors to focus on their content while maintaining a professional appearance. It includes sections for chapters, figures, tables, and references, making it suitable for a wide range of technical writing projects.",
+    },
+    {
         name: "Carepulse",
         githubLink: "https://github.com/thehackersbrain/carepulse",
         externalLink: "https://carepulse-theta.vercel.app/",
@@ -287,14 +294,14 @@ export const projects = [
         description:
             "Brainwave, a modern UI/UX website using React.js and TailwindCSS, built with Vite. This project showcases sleek design, parallax animations, complex UI geometry, and stylish gradients. It features beautiful sections including hero, services, features, and more, ensuring responsive functionality across all devices. Brainwave exemplifies contemporary web dev practices.",
     },
-    {
-        name: "HooBank",
-        githubLink: "https://github.com/thehackersbrain/hoobank",
-        externalLink: "https://hoobank-two-wine.vercel.app/",
-        date: "2024-07-08",
-        description:
-            "Created HooBank, a modern UI/UX website utilizing React.js and TailwindCSS. This project emphasizes sleek and responsive design, showcasing advanced web development skills and a focus on user experience. HooBank demonstrates proficiency in building visually appealing, high-performance web applications with contemporary front-end technologies.",
-    },
+    // {
+    //     name: "HooBank",
+    //     githubLink: "https://github.com/thehackersbrain/hoobank",
+    //     externalLink: "https://hoobank-two-wine.vercel.app/",
+    //     date: "2024-07-08",
+    //     description:
+    //         "Created HooBank, a modern UI/UX website utilizing React.js and TailwindCSS. This project emphasizes sleek and responsive design, showcasing advanced web development skills and a focus on user experience. HooBank demonstrates proficiency in building visually appealing, high-performance web applications with contemporary front-end technologies.",
+    // },
     {
         name: "Modern Portfolio",
         githubLink: "https://github.com/thehackersbrain/minimal-portfolio",
