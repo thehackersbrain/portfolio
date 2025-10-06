@@ -20,7 +20,7 @@ import TailwindIcon from "@/assets/icons/tech/tailwindcss.jpg";
 import ReactQIcon from "@/assets/icons/tech/reactjs.jpg";
 import TsIcon from "@/assets/icons/tech/typescript.jpg";
 import snapgramImg from "@/assets/images/snapgram.png";
-import vigarchImg from "@/assets/images/vigarch.png";
+import berserkarchImg from "@/assets/images/berserkarch.png";
 import chip8Img from "@/assets/images/chip8.png";
 import TorIcon from "@/assets/icons/tech/tor.png";
 import LinuxxIcon from "@/assets/icons/tech/linux.png";
@@ -167,6 +167,43 @@ export const basicInfo = {
 export const portfolioProjects = [
     {
         company: "Cybercraft Labs Pvt Ltd",
+        year: "2025",
+        title: "BerserkArch Linux",
+        results: [
+            {
+                title: "Minimal by Design, Hacking Ready by Default",
+            },
+            { title: "Performance Tuned for Security" },
+            { title: "Built with Arch Linux" },
+        ],
+        tech: [
+            {
+                name: "Linux",
+                image: LinuxxIcon,
+            },
+            {
+                name: "CI/CD",
+                image: CicdIcon,
+            },
+            {
+                name: "Hacking Tools",
+                image: GitIcon,
+            },
+            {
+                name: "Dev Ready",
+                image: GithubLogoIcon,
+            },
+            {
+                name: "Tor",
+                image: TorIcon,
+            }
+        ],
+        link: "https://berserkarch.xyz/",
+        githubLink: "https://github.com/berserkarch/berserkarch",
+        image: berserkarchImg,
+    },
+    {
+        company: "Cybercraft Labs Pvt Ltd",
         year: "2024",
         title: "Social Media WebApp",
         results: [
@@ -201,41 +238,6 @@ export const portfolioProjects = [
         link: "https://snapgram-two-self.vercel.app/",
         githubLink: "https://github.com/thehackersbrain/snapgram",
         image: snapgramImg,
-    },
-    {
-        company: "Cybercraft Labs Pvt Ltd",
-        year: "2024",
-        title: "Vigilante Arch - Live & Anonymous OS",
-        results: [
-            { title: "Amnesic and Live System" },
-            { title: "Minimal System with Vast Tools Repo" },
-            { title: "Tor Integration with Application Security" },
-        ],
-        tech: [
-            {
-                name: "Tor",
-                image: TorIcon,
-            },
-            {
-                name: "Linux",
-                image: LinuxxIcon,
-            },
-            {
-                name: "Git",
-                image: GitIcon,
-            },
-            {
-                name: "GitHub",
-                image: GithubLogoIcon,
-            },
-            {
-                name: "CI/CD",
-                image: CicdIcon,
-            },
-        ],
-        link: "https://vigarch.cybercraftlabs.org/",
-        githubLink: "https://github.com/cybercraftlabs/vigarch-os",
-        image: vigarchImg,
     },
     {
         company: "Personal (THB)",
